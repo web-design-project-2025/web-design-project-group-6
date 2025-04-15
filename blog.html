@@ -4,68 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="web.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0055f1c135.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="logo">VISIT SHANGHAI</div>
-      <nav>
-        <a href="#">Destinations</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
+      <div class="left">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="images/logo-shanghai.png"
+            alt="Visit-Shanghai-logo"
+        /></a>
+      </div>
+      <nav class="middle">
+        <ul>
+          <li><a href="index.html">Search activities</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <div class="lang">
-        <span>EN</span>
-        <span>Me</span>
+      <div class="right">
+        <a href="language.html">EN</a>
+        <a href="language.html">Log in</a>
       </div>
     </header>
     <main>
       <div class="part1">
+        <img src="images/blog1.jpeg" alt="background" />
         <p>
           “We believe that every step you take to explore the world is also a
-          step toward discovering yourself. Here, travel is not just movement
+          step <br />toward discovering yourself. Here,travel is not just
+          movement<br />
           —it’s a new way of life.”
         </p>
       </div>
+      <section class="blog-container1">
+        <img class="blog-img2" src="images/blog2.jpeg" alt="picture2" />
+        <div class="blog-text2">
+          <h1>Our Mission & Values</h1>
+          <p>
+            We aim to make discovering Shanghai simpler, more authentic, and
+            deeply meaningful.<br />
+            We believe that travel is not just moving from one landmark to
+            another—it's a soulful journey into the heart of culture and
+            everyday life.<br />Our goal is for you to do more than just "check
+            in"—we want you to truly feel the rhythm and charm of Shanghai, and
+            connect with its stories and soul.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="footer-links">
-        <div>
-          <h4>About</h4>
-          <a href="#">Destinations</a>
-          <a href="#">Blog</a>
-          <a href="#">Guide in Shanghai</a>
-        </div>
-        <div>
-          <h4>Destinations</h4>
-          <a href="#">Traffic Lines</a>
-          <a href="#">Blog</a>
-        </div>
-        <div>
-          <h4>Opportunities</h4>
-          <a href="#">Cooperation with us</a>
-          <a href="#">Media</a>
-        </div>
-        <div>
-          <h4 id="subscribe">Get 10% Off in your first order</h4>
-          <p id="subscribe-text">
-            Want to receive more discounts and event notifications?
-          </p>
-          <button class="subscribe-btn">Subscribe</button>
-        </div>
+      <div class="column">
+        <img src="img/logo.png" alt="Logo" />
+        <h3>Contact</h3>
+        <p>
+          Shanghai Central Plaza 381 Huai Hai Zhong Road, Shanghai 200020, China
+        </p>
+        <p>+421 589 538 214</p>
       </div>
-      <div class="footer-bottom">
-        <div class="logo">VISIT SHANGHAI</div>
-        <div class="social-icons">
-          <img src="images/ins.png" alt="facebook" class="icon" />
-          <img src="images/insta.png" alt="instagram" class="icon" />
-          <img src="images/tiktok.png" alt="tiktok" class="icon" />
-          <img src="images/youtube.png" alt="youtube" class="icon" />
-        </div>
-        <img src="images/lan.png" alt="language" class="lan" /> EN
+      <div class="column">
+        <p><a href="about.html">About us</a></p>
+        <p><a href="blog.html">Blog articles</a></p>
+        <p><a href="contact.html">Contact us</a></p>
       </div>
-      <p>© visitshanghai 2025</p>
+      <div class="copyright">
+        <p>©Visit Shanghai 2025</p>
+      </div>
     </footer>
   </body>
 </html>
