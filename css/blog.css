@@ -1,0 +1,131 @@
+/* header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.lang span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/*footer*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.footer-links div {
+  text-align: left;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  margin: 3px 0;
+}
+
+.footer-links input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.footer-links button {
+  background-color: #ec5e5e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+#subscribe {
+  font-weight: 400;
+}
+
+#subscribe-text {
+  font-weight: 450;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+/* main page */
+.part1 {
+  background-image: url(b.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-size: 18px;
+}
