@@ -59,7 +59,7 @@ i {
 
 /*footer*/
 
-/* main page */
+/* main part */
 .part1 {
   width: 100%;
   height: 100%;
@@ -222,4 +222,28 @@ i {
 .blog-text3 p {
   color: black;
   font-size: 18px;
+}
+
+.blog-container4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.container4-title {
+  position: absolute;
+  top: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 1;
+  text-align: center;
+}
+.blog-img5 {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 0.8;
 }
