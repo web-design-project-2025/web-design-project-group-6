@@ -60,3 +60,25 @@ i {
 /*footer*/
 
 /* main part */
+.blog-part1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blog-part1 img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-part1 p {
+  font-style: normal;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 30px;
+}
