@@ -17,6 +17,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     background-color: white;
+<<<<<<< HEAD
     position: fixed;
     top: 0;
     left: 0;
@@ -36,6 +37,10 @@ header {
     color: black;
 }
 
+=======
+}
+
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 nav {
     display: flex;
     justify-content: center;
@@ -69,6 +74,15 @@ nav a:hover::after {
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    flex: 1;
+}
+
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .lang {
     display: flex;
     align-items: center;
@@ -77,6 +91,13 @@ nav a:hover::after {
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
+=======
+#en {
+    margin-left: -8px;
+}
+
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .lang a {
     text-decoration: none;
     color: black;
@@ -101,10 +122,13 @@ nav a:hover::after {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .en {
     margin-left: -8px;
 }
 
+=======
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .skyline {
     position: relative;
     width: 100%;
@@ -375,6 +399,14 @@ aside {
 @keyframes shake {
     0%, 100% { transform: translateY(0);}
     50% {transform: translateY(-3px);}
+<<<<<<< HEAD
+=======
+}
+
+.tags,.more-articles h4 {
+    font-weight: 500;
+    font-size: 20px;
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 }
 
 .tags h4 {
@@ -607,7 +639,11 @@ footer .social-icons img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+<<<<<<< HEAD
     gap: 10px;
+=======
+    gap: 8px;
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
     font-size: 18px;
 }
 
@@ -661,6 +697,7 @@ footer p {
     width: 100%;
 }
 
+<<<<<<< HEAD
 /* hide the navigation bar style */
 .nav-hidden {
     transform: translateY(-100%);
@@ -841,4 +878,16 @@ footer p {
         margin: 10px 0;
         flex: none;
     }
+=======
+.fade-up {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.5s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+>>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 }
