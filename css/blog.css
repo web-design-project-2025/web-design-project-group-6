@@ -87,7 +87,7 @@ i {
   margin-top: 100px;
 }
 .blog-container1 h1 {
-  margin-left: 30px;
+  margin-left: 80px;
   color: #17689c;
   font-weight: bold;
   font-size: 30px;
@@ -97,8 +97,10 @@ i {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 60px;
   margin-top: 60px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .blog-card {
@@ -109,6 +111,11 @@ i {
   height: auto;
   width: 150px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.1);
 }
 
 .blog-card img {
@@ -138,13 +145,21 @@ i {
   border-radius: 20px;
   font-size: 28px;
   margin: 80px auto;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-button:hover {
+  background-color: whitesmoke;
+  color: #61648a;
+  transform: scale(1.05);
 }
 
 .blog-container2 {
   margin-top: 100px;
 }
 .blog-container2 h1 {
-  margin-left: 30px;
+  margin-left: 80px;
   color: #17689c;
   font-weight: bold;
   font-size: 30px;
@@ -156,6 +171,8 @@ i {
   flex-wrap: wrap;
   gap: 15px;
   text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .blog-routes div {
@@ -172,4 +189,70 @@ i {
   background-color: #ec5e5e;
   margin: 30px auto;
   width: 80%;
+}
+
+.blog-container3 {
+  margin-top: 100px;
+}
+.blog-container3 h1 {
+  margin-left: 80px;
+  color: #17689c;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.blog-article-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+  gap: 90px;
+}
+.blog-article-img img {
+  width: 200;
+  height: 450px;
+  object-fit: cover;
+}
+
+.blog-container4 {
+  margin-top: 100px;
+}
+.blog-container4 h1 {
+  margin-left: 80px;
+  color: #17689c;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.blog-video-img {
+  display: flex;
+  gap: 20px;
+  height: 430px;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.left-img {
+  flex: 1;
+}
+
+.left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.right-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-img img {
+  width: 100%;
+  height: calc((430px - 20px) / 2);
+  object-fit: cover;
+  border-radius: 8px;
 }
