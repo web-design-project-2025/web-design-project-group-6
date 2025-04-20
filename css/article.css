@@ -17,7 +17,6 @@ header {
     align-items: center;
     padding: 20px 50px;
     background-color: white;
-<<<<<<< HEAD
     position: fixed;
     top: 0;
     left: 0;
@@ -37,10 +36,6 @@ header {
     color: black;
 }
 
-=======
-}
-
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 nav {
     display: flex;
     justify-content: center;
@@ -74,15 +69,12 @@ nav a:hover::after {
     width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .logo {
     font-size: 24px;
     font-weight: 600;
     flex: 1;
 }
 
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .lang {
     display: flex;
     align-items: center;
@@ -91,13 +83,10 @@ nav a:hover::after {
     justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-=======
-#en {
+.en {
     margin-left: -8px;
 }
 
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .lang a {
     text-decoration: none;
     color: black;
@@ -122,13 +111,10 @@ nav a:hover::after {
     width: 100%;
 }
 
-<<<<<<< HEAD
 .en {
     margin-left: -8px;
 }
 
-=======
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 .skyline {
     position: relative;
     width: 100%;
@@ -399,14 +385,11 @@ aside {
 @keyframes shake {
     0%, 100% { transform: translateY(0);}
     50% {transform: translateY(-3px);}
-<<<<<<< HEAD
-=======
 }
 
 .tags,.more-articles h4 {
     font-weight: 500;
     font-size: 20px;
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
 }
 
 .tags h4 {
@@ -639,11 +622,7 @@ footer .social-icons img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-<<<<<<< HEAD
     gap: 10px;
-=======
-    gap: 8px;
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
     font-size: 18px;
 }
 
@@ -697,7 +676,6 @@ footer p {
     width: 100%;
 }
 
-<<<<<<< HEAD
 /* hide the navigation bar style */
 .nav-hidden {
     transform: translateY(-100%);
@@ -878,7 +856,7 @@ footer p {
         margin: 10px 0;
         flex: none;
     }
-=======
+
 .fade-up {
     opacity: 0;
     transform: translateY(25px);
@@ -889,5 +867,98 @@ footer p {
 .fade-up.show {
     opacity: 1;
     transform: translateY(0);
->>>>>>> f0b5053 (finished the whole page and fixed some bugs)
+}
+
+.language-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px 60px;
+    border-radius: 15px;
+    z-index: 1000;
+    width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-popup.active {
+    display: block;
+}
+
+.language-popup h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 100px;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.language-grid a {
+    position: relative;
+    width: fit-content;
+}
+
+.language-grid a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.2px;
+    background: black;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+.language-grid a:hover::after {
+    width: 100%;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 450;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.language-item span {
+    min-width: 70px;
+}
+
+.language-item img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
+}
+
 }
