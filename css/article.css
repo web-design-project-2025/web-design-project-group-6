@@ -18,6 +18,17 @@ header {
     background-color: white;
 }
 
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -51,12 +62,6 @@ nav a:hover::after {
     width: 100%;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 600;
-    flex: 1;
-}
-
 .lang {
     display: flex;
     align-items: center;
@@ -65,7 +70,7 @@ nav a:hover::after {
     justify-content: flex-end;
 }
 
-#en {
+.en {
     margin-left: -8px;
 }
 
@@ -595,7 +600,7 @@ footer .social-icons img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 18px;
 }
 
@@ -659,4 +664,96 @@ footer p {
 .fade-up.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.language-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px 60px;
+    border-radius: 15px;
+    z-index: 1000;
+    width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-popup.active {
+    display: block;
+}
+
+.language-popup h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 100px;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.language-grid a {
+    position: relative;
+    width: fit-content;
+}
+
+.language-grid a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.2px;
+    background: black;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+.language-grid a:hover::after {
+    width: 100%;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 450;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.language-item span {
+    min-width: 70px;
+}
+
+.language-item img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
 }
