@@ -5,22 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
     <link rel="stylesheet" href="css/article.css">
-    <script src="js/article.js" defer></script>
+    <script src="js/index.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Onest:wght@100..900&family=Oswald:wght@200..700&family=PT+Sans+Caption:wght@400;700&family=Pathway+Gothic+One&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Staatliches&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">VISIT SHANGHAI</div>
+        <div class="logo">
+            <a href="index.html">VISIT SHANGHAI</a>
+        </div>
         <nav>
-            <a href="#">Destinations</a>
+            <a href="top-rated.html">Destinations</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
             <a href="#">About</a>
         </nav>
         <div class="lang">
             <img src="images/lan.png" alt="language" class="lan">
-            <a href="#" id="en">EN</a>
+            <a href="#" class="en">EN</a>
             <a href="#">Me</a>
+        </div>
+         <!-- Language Selection Popup -->
+        <div class="language-popup" id="language-popup">
+            <button class="close-btn" id="close-popup">&times;</button>
+            <h2>Select your language</h2>
+            <div class="language-grid">
+                <a href="#" class="language-item">
+                    <img src="images/uk.png" alt="English flag">
+                    <span>English</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/SE.png" alt="Swedish flag">
+                    <span>Swedish</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/DK.png" alt="Danish flag">
+                    <span>Danish</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/france.png" alt="French flag">
+                    <span>French</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/norge.png" alt="Norwegian flag">
+                    <span>Norwegian</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/KR.png" alt="Korean flag">
+                    <span>Korean</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/ES.png" alt="spanish flag">
+                    <span>Spanish</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/FI.png" alt="Finnish flag">
+                    <span>Finnish</span>
+                </a>
+                <a href="#" class="language-item">
+                    <img src="images/CN.png" alt="Chinese flag">
+                    <span>Chinese</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -156,7 +201,7 @@
         <div class="footer-links fade-up">
             <div>
                 <h4>About</h4>
-                <a href="#">Destinations</a>
+                <a href="top-rated.html">Destinations</a>
                 <a href="#">Blog</a>
                 <a href="#">Guide in Shanghai</a>
             </div>
@@ -186,7 +231,7 @@
             </div>
             <div class="lan-container">
                 <img src="images/lan.png" alt="language" class="lan">
-                <a href="#">EN</a>
+                <a href="#" class="en">EN</a>
             </div>
         </div>
         <p class="fade-up">© visitshanghai 2025</p>
