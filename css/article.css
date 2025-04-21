@@ -673,7 +673,7 @@ footer p {
     
     .logo {
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         width: 100%;
     }
     
@@ -684,14 +684,14 @@ footer p {
     }
     
     nav a {
-        font-size: 16px;
+        font-size: 17px;
         margin: 0 10px;
     }
     
     .lang {
         width: 100%;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     
     .skyline {
@@ -754,18 +754,6 @@ footer p {
         margin-left: auto;
     }
     
-    .footer-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-content: space-between;
-    }
-    
-    .footer-links div:last-child {
-        grid-column: span 2; 
-        text-align: center;
-    }
-    
     .content {
         flex-direction: column;
         gap: 40px;
@@ -788,6 +776,18 @@ footer p {
     .comment > div {
         margin-left: 0;
         margin-top: 10px;
+    }
+    
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .footer-links div:last-child {
+        grid-column: span 2; 
+        text-align: center;
     }
     
     .footer-bottom {
