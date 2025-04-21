@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 * {
     margin: 0;
     padding: 0;
@@ -666,4 +664,165 @@ footer p {
     border-top: 1px solid #e5e5e5;
     width: 100%;
 }
->>>>>>> 76d2649 (responsive)
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 190px; 
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    nav {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    nav a {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    
+    .lang {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .skyline {
+        height: 400px;
+    }
+    
+    .skyline-text {
+        left: 50%;
+        width: 80%;
+    }
+    
+    .skyline-text h1 {
+        font-size: 28px;
+    }
+    
+    .blogger {
+        padding: 15px;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .date-views {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+    .article h2 {
+        font-size: 24px;
+    }
+    
+    .article h3 {
+        font-size: 20px;
+    }
+    
+    .article p, .article li {
+        font-size: 16px;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+    
+    .tags span {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+    
+    .comments textarea {
+        height: 100px;
+    }
+    
+    .post-btn {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        right: auto;
+        margin-left: auto;
+    }
+    
+    .content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    aside {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .comment {
+        flex-direction: column;
+    }
+    
+    .comment > div {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .footer-links div:last-child {
+        grid-column: span 2; 
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 40px auto 0;
+    }
+    
+    .footer-bottom .logo {
+        text-align: center;
+        width: 100%;
+        margin: 0 0 10px;
+        flex: none;
+    }
+    
+    footer .social-icons {
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+        flex: none;
+    }
+    
+    footer .lan-container {
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+        flex: none;
+    }
+}
+
