@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
     <link rel="stylesheet" href="css/article.css">
-    <script src="js/article.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Onest:wght@100..900&family=Oswald:wght@200..700&family=PT+Sans+Caption:wght@400;700&family=Pathway+Gothic+One&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Staatliches&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">VISIT SHANGHAI</div>
+        <div class="logo">
+            <a href="index.html">VISIT SHANGHAI</a>
+        </div>
         <nav>
             <a href="#">Destinations</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
         </nav>
         <div class="lang">
-            <a href="#">EN</a>
+            <img src="images/lan.png" alt="language" class="lan">
+            <a href="#" class="en">EN</a>
             <a href="#">Me</a>
         </div>
     </header>
@@ -33,12 +35,12 @@
         <div class="info">
             <img src="images/WechatIMG780.jpg" alt="Author" class="info-img">
             <div class="info-details">
-                <span class="name">Jackson Kong</span>
+                <span class="name">Jackson</span>
                 <span class="user">Travel Blogger</span>
             </div>
             <div class="date-views">
                 <span>25 March, 2025</span>
-                <span>520 views</span>
+                <span id="views">520 views</span>
             </div>
         </div>
     </div>
@@ -60,9 +62,11 @@
                 </ul>
 
                 <h3>Day 2: Culture and Modern Vibes</h3>
-                <img src="images/WechatIMG785.jpg" alt="Jing'an Temple Illustration" class="article-illustration">
-                <h1 class="blue-bottle">Blue Bottle Coffee</h1>
-                <p class="blue-text">Address: No. 1 Hongqiao Road, Xuhui District, Shanghai</p>
+                <img src="images/WechatIMG785.jpg" alt="Jing'an Temple Illustration" class="article-image">
+                <div class="image-text">
+                    <h1 class="blue-bottle">Blue Bottle Coffee</h1>
+                    <p class="blue-text">Address: No. 1 Hongqiao Road, Xuhui District, Shanghai</p>
+                </div>
                 <ul>
                     <li><strong>Morning:</strong> Jing'an Temple (50 CNY, optional) - Visit Jing'an Temple (entry: 50 CNY, or admire from outside for free!). This Buddhist temple's golden exterior is striking.</li>
                     <li><strong>Afternoon:</strong> Former French Concession & Lunch (20 CNY) - Take the metro (2-6 CNY) to the Former French Concession. Wander through Tianzifang's artsy alleys (free). Lunch on a scallion pancake or skewers (~15 CNY).</li>
@@ -71,7 +75,7 @@
                 </ul>
 
                 <h3>Day 3: Local Life and Serenity</h3>
-                <img src="images/WechatIMG786.jpg" alt="Fuxing Park Illustration" class="article-illustration">
+                <img src="images/WechatIMG786.jpg" alt="Fuxing Park Illustration" class="article-image">
                 <h1 class="reel">Shanghai Reel</h1>
                 <p class="reel-text">Address: Nanjing West Road, Jing An District, Shanghai</p>
                 <ul>
@@ -92,18 +96,24 @@
 
             <aside>
                 <div class="search-bar">
-                    <img src="images/WechatIMG782.jpg" alt="Search" class="icon">
-                    <input type="text" placeholder="Search Destinations">
+                    <img src="images/WechatIMG782.jpg" alt="search-background">
+                    <div class="search-background">
+                        <h2>Search Destinations</h2>
+                        <div class="search-box">
+                            <input type="text" placeholder="Bistros...">
+                            <button><img src="images/search.png" alt="search"></button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tags">
                     <h4>Popular Tags</h4>
-                    <span>#Free</span>
-                    <span>#Foodie</span>
-                    <span>#Programs</span>
-                    <span>#Travel</span>
-                    <span>#Museums</span>
-                    <span>#Shanghai</span>
+                    <span>#livehouse</span>
+                    <span>#localfood</span>
+                    <span>#sportgames</span>
+                    <span>#shopping</span>
+                    <span>#museums</span>
+                    <span>#citywalk</span>
                 </div>
                 
                 <div class="more-articles">
@@ -111,6 +121,7 @@
                     <div class="article">
                         <img src="images/WechatIMG787.jpg" alt="more-articles">
                         <a href="#">Cafe Map in Shanghai</a>
+                        <img src="images/compass.png" alt="compass" id="compass">
                     </div>
                 </div>
             </aside>
@@ -128,6 +139,7 @@
                     <img src="images/likes.png" alt="Like" class="icon"> 12
                 </div>
             </div>
+            <hr id="hr">
             <div class="comment">
                 <img src="images/pexels-photo-1438081.webp" alt="User2">
                 <div>
@@ -175,7 +187,7 @@
             </div>
             <div class="lan-container">
                 <img src="images/lan.png" alt="language" class="lan">
-                <a href="#">EN</a>
+                <a href="#" class="en">EN</a>
             </div>
         </div>
         <p>© visitshanghai 2025</p>
