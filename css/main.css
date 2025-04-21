@@ -132,7 +132,7 @@ body {
 
 /* Section 1: Hero */
 .hero {
-  background-image: url("https://via.placeholder.com/1600x800");
+  background-image: url("../images/background-image.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -185,7 +185,7 @@ body {
   flex: 1;
   background-size: cover;
   background-position: center;
-  height: 12rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,16 +195,16 @@ body {
 }
 
 .category:nth-child(1) {
-  background-image: url("https://via.placeholder.com/400x200?text=Museums");
+  background-image: url("../images/museum.jpg");
 }
 .category:nth-child(2) {
-  background-image: url("https://via.placeholder.com/400x200?text=Events");
+  background-image: url("../images/jing-temple.jpg");
 }
 .category:nth-child(3) {
-  background-image: url("https://via.placeholder.com/400x200?text=Food");
+  background-image: url("../images/food.jpg");
 }
 .category:nth-child(4) {
-  background-image: url("https://via.placeholder.com/400x200?text=Hotels");
+  background-image: url("../images/jing-temple.jpg");
 }
 
 /* Section 3: Promo */
@@ -216,7 +216,7 @@ body {
 }
 
 .promo-img {
-  width: 50%;
+  width: 30rem;
   border-radius: 1rem;
 }
 
@@ -265,7 +265,7 @@ body {
 
 /* Section 5: Last Minute */
 .last-minute {
-  background-image: url("https://via.placeholder.com/1600x400?text=Last+Minute+Deal");
+  background-image: url("../images/yu-garden.jpg");
   background-size: cover;
   background-position: center;
   color: white;
