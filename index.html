@@ -45,7 +45,78 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- Section 1: Hero with Search -->
+      <section class="hero">
+        <div class="hero-content">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="What activity are you searching for?"
+          />
+          <input type="date" id="dateInput" />
+          <button id="searchButton">Search</button>
+        </div>
+      </section>
+
+      <!-- Section 2: Activity Shortcuts -->
+      <section class="shortcuts">
+        <h2>Discover the city in different style</h2>
+        <div class="category-row">
+          <div class="category" data-category="Museums">Museums</div>
+          <div class="category" data-category="Events">Events</div>
+          <div class="category" data-category="Food">Food</div>
+          <div class="category" data-category="Hotels">Hotels</div>
+        </div>
+      </section>
+
+      <!-- Section 3: Disneyland Promo -->
+      <section class="promo">
+        <img src="images/disney.jpeg" alt="Disneyland" class="promo-img" />
+        <div class="promo-text">
+          <h3>
+            Enjoy 15% Off Shanghai Disneyland tickets on your first purchase!
+          </h3>
+          <a href="https://disneyland.com" target="_blank">Book now</a>
+        </div>
+      </section>
+
+      <!-- Section 4: Top Rated -->
+      <section class="top-rated">
+        <h2>Top Rated</h2>
+        <div class="top-rated-gallery">
+          <!-- These would be loaded dynamically, using placeholders for now -->
+          <div class="activity small">
+            <img src="images/jing-temple.jpg" alt="Activity 1" />
+            <p>Museum Tour</p>
+          </div>
+          <div class="activity medium">
+            <img src="images/museum.jpg" alt="Activity 2" />
+            <p>City Walk</p>
+          </div>
+          <div class="activity large">
+            <img src="images/about5.jpeg" alt="Activity 3" />
+            <p>Food Crawl</p>
+          </div>
+          <div class="activity medium">
+            <img src="images/food.jpg" alt="Activity 4" />
+            <p>Cooking Class</p>
+          </div>
+          <div class="activity small">
+            <img src="images/about4.jpeg" alt="Activity 5" />
+            <p>Sunset Cruise</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Last Minute Deal -->
+      <section class="last-minute">
+        <div class="last-minute-overlay">
+          <h2>Last Minute Deal - 15% Off!</h2>
+          <button class="book-btn">Book</button>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="column">
