@@ -472,6 +472,11 @@ footer p {
     transform: translateY(-3px);
 }
 
+/* hide the navigation bar style */
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 160px; 
