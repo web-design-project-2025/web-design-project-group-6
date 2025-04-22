@@ -8,8 +8,9 @@ var query = queryParam ? queryParam.toLowerCase() : "";
 /* this gets the place defined in html (resultsGrid) where I want to place the tiles with activities*/
 var grid = document.getElementById("resultsGrid");
 var showMoreBtn = document.getElementById("showMoreBtn");
+var showLessBtn = document.getElementById("showLessBtn");
 
-var visibleCount = 12;
+var visibleCount = 4;
 
 /*This is my array for activities filtered from keyword */
 var filtered = [];
@@ -57,11 +58,26 @@ function renderTiles() {
   } else {
     showMoreBtn.style.display = "block";
   }
+
+  if (visibleCount > 4) {
+    showLessBtn.style.display = "block";
+  } else {
+    showLessBtn.style.display = "none";
+  }
 }
 
+/*these 2 functions work the logic of clicking on them  */
 showMoreBtn.addEventListener("click", function () {
   /*I used 3 so that we can use all 15 activities currently in json, but we can change this later - depends on how many activities we do */
   visibleCount += 3;
+  renderTiles();
+});
+
+showLessBtn.addEventListener("click", function () {
+  visibleCount -= 3;
+  if (visibleCount < 4) {
+    visibleCount = 4;
+  }
   renderTiles();
 });
 
