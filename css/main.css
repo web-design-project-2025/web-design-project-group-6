@@ -323,7 +323,7 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #0077cc;
+  background-color: #ec5e5e;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -334,6 +334,10 @@ body {
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 #showLessBtn {
@@ -341,4 +345,8 @@ body {
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
 }
