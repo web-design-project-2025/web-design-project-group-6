@@ -1,45 +1,69 @@
-const urlParams = new URLSearchParams(window.location.search);
-const query = urlParams.get("query")?.toLowerCase() || "";
-const grid = document.getElementById("resultsGrid");
-const showMoreBtn = document.getElementById("showMoreBtn");
+var urlParams = new URLSearchParams(window.location.search);
+var queryParam = urlParams.get("query");
+var query = queryParam ? queryParam.toLowerCase() : "";
 
-let visibleCount = 12;
-let filtered = [];
+var grid = document.getElementById("resultsGrid");
+var showMoreBtn = document.getElementById("showMoreBtn");
+
+var visibleCount = 12;
+var filtered = [];
 
 function createTile(activity) {
-  const tile = document.createElement("div");
+  var tile = document.createElement("div");
   tile.className = "activity-tile";
-  tile.innerHTML = `
-    <img src="${activity.image_url || "placeholder.jpg"}" alt="${
-    activity.name
-  }" />
-    <h3>${activity.name}</h3>
-    <p>${activity.price_sek} SEK</p>
-    <a href="activity.html?id=${activity.id}" class="book-btn">Book</a>
-  `;
+
+  var imageUrl = activity.image_url ? activity.image_url : "placeholder.jpg";
+
+  tile.innerHTML =
+    '<img src="' +
+    imageUrl +
+    '" alt="' +
+    activity.name +
+    '" />' +
+    "<h3>" +
+    activity.name +
+    "</h3>" +
+    "<p>" +
+    activity.price_sek +
+    " SEK</p>" +
+    '<a href="activity.html?id=' +
+    activity.id +
+    '" class="book-btn">Book</a>';
+
   return tile;
 }
 
 function renderTiles() {
   grid.innerHTML = "";
-  const toShow = filtered.slice(0, visibleCount);
-  toShow.forEach((act) => grid.appendChild(createTile(act)));
+  var toShow = filtered.slice(0, visibleCount);
 
-  showMoreBtn.style.display =
-    visibleCount >= filtered.length ? "none" : "block";
+  for (var i = 0; i < toShow.length; i++) {
+    var tile = createTile(toShow[i]);
+    grid.appendChild(tile);
+  }
+
+  if (visibleCount >= filtered.length) {
+    showMoreBtn.style.display = "none";
+  } else {
+    showMoreBtn.style.display = "block";
+  }
 }
 
-showMoreBtn.addEventListener("click", () => {
+showMoreBtn.addEventListener("click", function () {
   visibleCount += 3;
   renderTiles();
 });
 
 fetch("json/activities.json")
-  .then((res) => res.json())
-  .then((data) => {
-    filtered = data.activities.filter((a) =>
-      a.name.toLowerCase().includes(query)
-    );
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    filtered = data.activities.filter(function (activity) {
+      return activity.name.toLowerCase().indexOf(query) !== -1;
+    });
     renderTiles();
   })
-  .catch((err) => console.error("Failed to load activities:", err));
+  .catch(function (error) {
+    console.error("Failed to load activities:", error);
+  });
