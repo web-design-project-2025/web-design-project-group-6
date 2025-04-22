@@ -63,8 +63,6 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-<<<<<<< HEAD
-=======
   align-items: center;
 }
 
@@ -91,11 +89,8 @@ header {
 }
 
 .right a::after {
-<<<<<<< HEAD
   content: "";
-=======
   content: '';
->>>>>>> b4f38a2 (new menu and responsive)
   position: absolute;
   width: 0;
   height: 1.2px;
@@ -107,7 +102,6 @@ header {
 
 .right a:hover::after {
   width: 100%;
->>>>>>> a80fdf6 (new menu and responsive)
 }
 
 .logo {
@@ -347,12 +341,6 @@ body {
   border-radius: 0.25rem;
   margin-top: 1rem;
 }
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> a80fdf6 (new menu and responsive)
-/*RESULTS PAGE*/
 
 .grid-container {
   display: grid;
@@ -393,8 +381,6 @@ body {
   padding: 10px 20px;
   font-size: 16px;
 }
-=======
->>>>>>> b4f38a2 (new menu and responsive)
 
 @media (max-width: 768px) {
   .nav-container {
@@ -405,7 +391,6 @@ body {
     text-align: center;
     margin-bottom: 5px;
     width: 100%;
-<<<<<<< HEAD
   }
   .middle {
     width: 100%;
@@ -447,7 +432,6 @@ body {
     padding: 10px;
   }
 }
-<<<<<<< HEAD
 
 .promo-text a {
   color: #ec5e5e;
@@ -455,10 +439,7 @@ body {
   font-weight: bold;
   padding: 10px;
 }
-}
-=======
-=======
-}
+
   .middle {
   width: 100%;
   justify-content: center;
@@ -474,6 +455,31 @@ body {
   margin-top: 5px;
   gap: 10px;
 }
+
+
+.promo {
+  display: block;
+  padding: 0;
+  gap: 2rem;
+  align-items: center;
 }
->>>>>>> b4f38a2 (new menu and responsive)
->>>>>>> a80fdf6 (new menu and responsive)
+
+.promo-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.promo-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+.promo-text a {
+  color: #ec5e5e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
