@@ -1,0 +1,130 @@
+{
+  "activities": [
+    {
+      "id": "shanghai_museum",
+      "name": "Shanghai Museum",
+      "price_sek": 450,
+      "description": "Explore China's rich history through ancient Chinese art and artifacts.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "2 hours"
+    },
+    {
+      "id": "guanfu_museum",
+      "name": "Guanfu Museum",
+      "price_sek": 150,
+      "description": "Discover traditional Chinese craftsmanship and antique furniture.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1.5 hours"
+    },
+    {
+      "id": "shanghai_foodie_tour",
+      "name": "Shanghai Foodie Tour",
+      "price_sek": 850,
+      "description": "Experience authentic local cuisine with guided tastings.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "3 hours"
+    },
+    {
+      "id": "culinary_backstreets_tour",
+      "name": "Culinary Backstreets Tour",
+      "price_sek": 900,
+      "description": "Explore Shanghai's hidden food gems with expert guides.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "3 hours"
+    },
+    {
+      "id": "shanghai_bund_cruise",
+      "name": "Shanghai Bund Cruise",
+      "price_sek": 600,
+      "description": "Enjoy a scenic evening cruise along the Huangpu River.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1 hour"
+    },
+    {
+      "id": "shanghai_tower_observation",
+      "name": "Shanghai Tower Observation Deck",
+      "price_sek": 700,
+      "description": "Get panoramic views from China's tallest building.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1 hour"
+    },
+    {
+      "id": "yuyuan_garden",
+      "name": "Yuyuan Garden",
+      "price_sek": 300,
+      "description": "Stroll through a classical Chinese garden in the heart of the city.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "2 hours"
+    },
+    {
+      "id": "jade_buddha_temple",
+      "name": "Jade Buddha Temple",
+      "price_sek": 250,
+      "description": "Visit a serene Buddhist temple housing two jade Buddha statues.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1.5 hours"
+    },
+    {
+      "id": "french_concession_walk",
+      "name": "French Concession Walk",
+      "price_sek": 400,
+      "description": "Explore the charming tree-lined streets of Shanghai's historic district.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "2 hours"
+    },
+    {
+      "id": "shanghai_disneyland",
+      "name": "Shanghai Disneyland",
+      "price_sek": 950,
+      "description": "Experience Disney magic with themed attractions and shows.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "Full day"
+    },
+    {
+      "id": "urban_planning_exhibition",
+      "name": "Urban Planning Exhibition Center",
+      "price_sek": 200,
+      "description": "Learn about Shanghai's development through interactive exhibits.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1.5 hours"
+    },
+    {
+      "id": "propaganda_poster_art_centre",
+      "name": "Propaganda Poster Art Centre",
+      "price_sek": 180,
+      "description": "View a unique collection of Chinese propaganda posters.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "1 hour"
+    },
+    {
+      "id": "shanghai_circus_world",
+      "name": "Shanghai Circus World",
+      "price_sek": 800,
+      "description": "Enjoy a spectacular acrobatic performance showcasing Chinese culture.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "2 hours"
+    },
+    {
+      "id": "shanghai_zoo",
+      "name": "Shanghai Zoo",
+      "price_sek": 350,
+      "description": "Visit one of China's oldest zoos, home to diverse wildlife.",
+      "image_url": "images/museum.jpg",
+      "location": "Shanghai",
+      "duration": "2 hours"
+    }
+  ]
+}
