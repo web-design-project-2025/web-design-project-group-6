@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
         header.classList.remove('nav-hidden');
     }
     
-    // if it has returned to the top, always show the navigation bar
+    // if it has returned to the top,always show the navigation bar
     if (scrollTop === 0) {
         header.classList.remove('nav-hidden');
     }
