@@ -273,11 +273,10 @@ body {
   border-radius: 5px;
   font-size: 20px;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form form button:hover {
-  background-color: whitesmoke;
+  background-color: white;
   color: #61648a;
-  transform: scale(1.05);
 }

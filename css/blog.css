@@ -252,23 +252,22 @@ body {
 
 .blog-button {
   display: block;
-  width: 250px;
-  height: 60px;
+  width: 200px;
+  height: 30px;
   background-color: #17689c;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  font-size: 28px;
+  font-size: 20px;
   margin: 80px auto;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .blog-button:hover {
-  background-color: whitesmoke;
+  background-color: white;
   color: #61648a;
-  transform: scale(1.05);
 }
 
 .blog-container2 {
@@ -328,8 +327,12 @@ body {
   width: 200;
   height: 450px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
-
+.blog-article-img img:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
 .blog-container4 {
   margin-top: 100px;
 }
@@ -357,6 +360,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .right-img {
@@ -371,8 +375,13 @@ body {
   height: calc((430px - 20px) / 2);
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
-
+.left-img img:hover,
+.right-img img:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
 @media (max-width: 1200px) {
   .card-list,
   .blog-routes,
