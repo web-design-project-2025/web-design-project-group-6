@@ -43,7 +43,7 @@ header {
 
 .middle {
   flex: 2;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -54,8 +54,28 @@ header {
   gap: 2rem;
   padding: 0;
   margin: 0 15px;
-  width: fit-content;
+  justify-content: center;
+}
+
+.middle li {
+  display: block;
   position: relative;
+  width: fit-content;
+}
+
+.middle li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.2px;
+  background: black;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.middle li:hover::after {
+  width: 100%;
 }
 
 .right {
@@ -115,12 +135,8 @@ a {
   font-size: 20px;
   font-weight: 400;
   color: black;
-  transition: 0.3s ease;
 }
 
-a:hover {
-  color: #61648a;
-}
 /* Footer */
 footer {
   background-color: #f2f2f2;
