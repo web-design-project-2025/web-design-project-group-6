@@ -273,7 +273,7 @@ header {
 }
 
 .discover-btn {
-    background-color: #ec5e5e;
+    background-color: #17689c;
     border: none;
     padding: 10px 30px;
     font-size: 17px;
@@ -287,9 +287,11 @@ header {
 .explore-more {
     display: block;
     margin: 40px auto;
-    background-color: #b9aba9;
-    border: none;
-    color: white;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    font-weight: 450;
     padding: 10px 30px;
     font-size: 20px;
     cursor: pointer;
@@ -297,7 +299,7 @@ header {
 }
 
 .explore-more:hover {
-    background-color: #735a5d;
+    transform: translateY(-3px);
 }
 
 .reviews {
