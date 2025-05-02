@@ -166,18 +166,19 @@ document.addEventListener('DOMContentLoaded', function() {
             .login-btn {
                 width: 100%;
                 padding: 12px;
-                background-color: #17689c;
-                color: white;
-                border: none;
+                background-color: #fff;
+                color: black;
+                border: solid 2px black;
                 border-radius: 8px;
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 500;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
             }
             
             .login-btn:hover {
-                background-color:rgb(7, 42, 138);
+                background-color: black;
+                color: white;
             }
             
             .divider {
