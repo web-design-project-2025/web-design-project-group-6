@@ -154,7 +154,7 @@ footer {
 }
 
 .footer-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1.2px;
@@ -375,4 +375,18 @@ body {
 .contact-form form button:hover {
   background-color: white;
   color: #61648a;
+}
+
+/*weather-box*/
+.weather-box {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#weather-information {
+  font-size: 18px;
+  margin-top: 10px;
 }
