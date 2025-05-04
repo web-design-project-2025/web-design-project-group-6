@@ -445,6 +445,49 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     });
     
+    // Validation functions
+    function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function validateMobile(mobile) {
+        // Support international mobile number formats
+        const mobileRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+        return mobileRegex.test(mobile);
+    }
+
+    function validatePassword(password) {
+        // Password must be at least 8 characters long and contain uppercase, lowercase, and numbers
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+        return passwordRegex.test(password);
+    }
+
+    function showError(input, message) {
+        const formGroup = input.parentElement;
+        const errorDiv = formGroup.querySelector('.error-message') || document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.textContent = message;
+        errorDiv.style.color = '#e74c3c';
+        errorDiv.style.fontSize = '14px';
+        errorDiv.style.marginTop = '5px';
+        
+        if (!formGroup.querySelector('.error-message')) {
+            formGroup.appendChild(errorDiv);
+        }
+        
+        input.style.borderColor = '#e74c3c';
+    }
+
+    function clearError(input) {
+        const formGroup = input.parentElement;
+        const errorDiv = formGroup.querySelector('.error-message');
+        if (errorDiv) {
+            errorDiv.remove();
+        }
+        input.style.borderColor = '#ddd';
+    }
+
     // Setup all modal event handlers
     function setupModalEvents() {
         const closeBtn = document.getElementById('close-login');
@@ -488,6 +531,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
                 
+                // Validate email/mobile
+                if (!validateEmail(email) && !validateMobile(email)) {
+                    showError(document.getElementById('email'), 'Please enter a valid email or mobile number');
+                    return;
+                }
+                
                 // Get stored users
                 const users = JSON.parse(localStorage.getItem('users')) || [];
                 
@@ -515,6 +564,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     alert('Invalid email or password. Please try again.');
                 }
             });
+            
+            // Add real-time validation for email/mobile input
+            const emailInput = document.getElementById('email');
+            emailInput.addEventListener('input', function() {
+                const value = this.value;
+                if (value) {
+                    if (!validateEmail(value) && !validateMobile(value)) {
+                        showError(this, 'Please enter a valid email or mobile number');
+                    } else {
+                        clearError(this);
+                    }
+                } else {
+                    clearError(this);
+                }
+            });
         }
         
         // Handle signup form submission
@@ -528,23 +592,37 @@ document.addEventListener('DOMContentLoaded', function() {
                 const password = document.getElementById('signup-password').value;
                 const confirmPassword = document.getElementById('confirm-password').value;
                 
-                // Basic validation
-                if (!name || !email || !password) {
-                    alert('Please fill in all required fields.');
-                    return;
+                // Validate all fields
+                let isValid = true;
+                
+                if (!name) {
+                    showError(document.getElementById('signup-name'), 'Please enter your name');
+                    isValid = false;
+                }
+                
+                if (!validateEmail(email) && !validateMobile(email)) {
+                    showError(document.getElementById('signup-email'), 'Please enter a valid email or mobile number');
+                    isValid = false;
+                }
+                
+                if (!validatePassword(password)) {
+                    showError(document.getElementById('signup-password'), 'Password must be at least 8 characters long and contain uppercase, lowercase, and numbers');
+                    isValid = false;
                 }
                 
                 if (password !== confirmPassword) {
-                    alert('Passwords do not match.');
-                    return;
+                    showError(document.getElementById('confirm-password'), 'Passwords do not match');
+                    isValid = false;
                 }
+                
+                if (!isValid) return;
                 
                 // Get existing users
                 const users = JSON.parse(localStorage.getItem('users')) || [];
                 
                 // Check if user already exists
                 if (users.some(user => user.email === email)) {
-                    alert('An account with this email already exists. Please log in.');
+                    showError(document.getElementById('signup-email'), 'An account with this email already exists');
                     return;
                 }
                 
@@ -574,6 +652,50 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.body.style.overflow = '';
                 
                 alert('Registration successful! You are now logged in.');
+            });
+            
+            // Add real-time validation for signup form inputs
+            const signupEmailInput = document.getElementById('signup-email');
+            signupEmailInput.addEventListener('input', function() {
+                const value = this.value;
+                if (value) {
+                    if (!validateEmail(value) && !validateMobile(value)) {
+                        showError(this, 'Please enter a valid email or mobile number');
+                    } else {
+                        clearError(this);
+                    }
+                } else {
+                    clearError(this);
+                }
+            });
+            
+            const signupPasswordInput = document.getElementById('signup-password');
+            signupPasswordInput.addEventListener('input', function() {
+                const value = this.value;
+                if (value) {
+                    if (!validatePassword(value)) {
+                        showError(this, 'Password must be at least 8 characters long and contain uppercase, lowercase, and numbers');
+                    } else {
+                        clearError(this);
+                    }
+                } else {
+                    clearError(this);
+                }
+            });
+            
+            const confirmPasswordInput = document.getElementById('confirm-password');
+            confirmPasswordInput.addEventListener('input', function() {
+                const value = this.value;
+                const password = signupPasswordInput.value;
+                if (value) {
+                    if (value !== password) {
+                        showError(this, 'Passwords do not match');
+                    } else {
+                        clearError(this);
+                    }
+                } else {
+                    clearError(this);
+                }
             });
         }
         
