@@ -1,19 +1,28 @@
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Shanghai&appid=0cc690bc2da2c8ac85cf8d4141253531&units=metric&lang=en";
+const latitude = 31.2304;
+const longitude = 121.4737;
+const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&temperature_unit=celsius&lang=en`;
 
-fetch(url);
-
-/*
-  .then((response) => response.json())
-  .then((data) => {
-    console.log("Weather data:", data);
-    document.getElementById(
-      "weather-information"
-    ).textContent = `Location: ${data.name}, ${data.sys.country}
-     Temp: ${data.main.temp}°C
-     Weather: ${data.weather[0].description}`;
+fetch(url)
+  .then(function (response) {
+    return response.json();
   })
+  .then(function (data) {
+    console.log("Weather data:", data);
+
+    const weatherinformation = document.getElementById("weather-information");
+    weatherinformation.innerHTML =
+      "<strong>Location:</strong> Shanghai<br>" +
+      "<strong>Temperature:</strong> " +
+      data.current_weather.temperature +
+      "°C<br>" +
+      "<strong>Wind Speed: </strong>" +
+      data.current_weather.windspeed +
+      " km/h<br>" +
+      "<strong>Wind Direction:</strong> " +
+      data.current_weather.winddirection +
+      "°";
+  })
+
   .catch((error) => {
     console.error("Failed to fetch weather data:", error);
   });
-*/
