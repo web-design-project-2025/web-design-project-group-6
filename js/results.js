@@ -15,7 +15,7 @@ var visibleCount = 4;
 /*This is my array for activities filtered from keyword */
 var filtered = [];
 
-/* Creating the tiles with the classic createElement command */
+/* creating the tiles with the classic createElement command */
 function createTile(activity) {
   var tile = document.createElement("div");
   tile.className = "activity-tile";

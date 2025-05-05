@@ -34,7 +34,6 @@
 
         <nav class="middle">
           <ul>
-            <li><a href="index.html">Search activities</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -42,8 +41,25 @@
         </nav>
 
         <div class="right">
-          <img src="images/lan.png" alt="language" class="lan" />
-          <a href="language.html" class="en">EN</a>
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search activities, places, sights..."
+            />
+            <button id="searchButton" class="search-btn" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div class="language-selector">
+            <img src="images/lan.png" alt="language" class="lan" />
+            <span class="selected-lang">EN</span>
+            <ul class="language-menu">
+              <li data-lang="EN">English</li>
+              <li data-lang="SV">Swedish</li>
+              <li data-lang="ZH">Chinese</li>
+            </ul>
+          </div>
           <a href="language.html">Log in</a>
         </div>
       </div>
@@ -51,15 +67,7 @@
     <main>
       <!-- Section 1: Hero with Search -->
       <section class="hero">
-        <div class="hero-content">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="What activity are you searching for?"
-          />
-          <input type="date" id="dateInput" />
-          <button id="searchButton">Search</button>
-        </div>
+        <div class="hero-content"></div>
       </section>
 
       <!-- Section 2: Activity Shortcuts -->
@@ -120,45 +128,51 @@
         </div>
       </section>
     </main>
-    <hr id="hr">
+    <hr id="hr" />
     <footer>
-        <div class="footer-links">
-            <div>
-                <h4>About</h4>
-                <a href="#">Destinations</a>
-                <a href="#">Blog</a>
-                <a href="#">Guide in Shanghai</a>
-            </div>
-            <div>
-                <h4>Destinations</h4>
-                <a href="#">Traffic Lines</a>
-                <a href="#">Blog</a>
-            </div>
-            <div>
-                <h4>Opportunities</h4>
-                <a href="#">Cooperation with us</a>
-                <a href="#">Media</a>
-            </div>
-            <div>
-                <h4 id="subscribe">Get 10% Off in your first order</h4>
-                <p id="subscribe-text">Want to receive more discounts and event notifications?</p>
-                <button class="subscribe-btn">Subscribe</button>
-            </div>
+      <div class="footer-links">
+        <div>
+          <h4>About</h4>
+          <a href="#">Destinations</a>
+          <a href="#">Blog</a>
+          <a href="#">Guide in Shanghai</a>
         </div>
-        <div class="footer-bottom">
-            <img src="images/logo-shanghai.png" alt="Visit-Shanghai-logo" class="logo">
-            <div class="social-icons">
-                <img src="images/ins.png" alt="facebook" class="icon">
-                <img src="images/insta.png" alt="instagram" class="icon">
-                <img src="images/tiktok.png" alt="tiktok" class="icon">
-                <img src="images/youtube.png" alt="youtube" class="icon">
-            </div>
-            <div class="lan-container">
-                <img src="images/lan.png" alt="language" class="lan">
-                <a href="#" class="en">EN</a>
-            </div>
+        <div>
+          <h4>Destinations</h4>
+          <a href="#">Traffic Lines</a>
+          <a href="#">Blog</a>
         </div>
-        <p>© visitshanghai 2025</p>
+        <div>
+          <h4>Opportunities</h4>
+          <a href="#">Cooperation with us</a>
+          <a href="#">Media</a>
+        </div>
+        <div>
+          <h4 id="subscribe">Get 10% Off in your first order</h4>
+          <p id="subscribe-text">
+            Want to receive more discounts and event notifications?
+          </p>
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img
+          src="images/logo-shanghai.png"
+          alt="Visit-Shanghai-logo"
+          class="logo"
+        />
+        <div class="social-icons">
+          <img src="images/ins.png" alt="facebook" class="icon" />
+          <img src="images/insta.png" alt="instagram" class="icon" />
+          <img src="images/tiktok.png" alt="tiktok" class="icon" />
+          <img src="images/youtube.png" alt="youtube" class="icon" />
+        </div>
+        <div class="lan-container">
+          <img src="images/lan.png" alt="language" class="lan" />
+          <a href="#" class="en">EN</a>
+        </div>
+      </div>
+      <p>© visitshanghai 2025</p>
     </footer>
   </body>
 </html>

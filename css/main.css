@@ -24,7 +24,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -79,7 +81,7 @@ header {
 }
 
 .right {
-  flex: 1;
+  flex: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
@@ -129,6 +131,61 @@ header {
   object-fit: contain;
 }
 
+/* Search Bar Styling */
+.right input[type="text"] {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  width: 250px;
+  transition: border-color 0.3s;
+}
+
+.right input[type="text"]:focus {
+  border-color: #17689c;
+}
+.search-container {
+  position: relative;
+  width: 250px;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 8px 38px 8px 16px; /* right padding increased for button space */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #17689c;
+}
+
+.search-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #17689c;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn:hover {
+  background-color: #12567e;
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -136,6 +193,8 @@ a {
   font-weight: 400;
   color: black;
 }
+
+/* Language drop down menu*/
 
 /* Footer */
 footer {
@@ -170,7 +229,7 @@ footer {
 }
 
 .footer-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1.2px;
