@@ -514,6 +514,18 @@ body {
   border-radius: 4px;
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  animation-name: fade;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;

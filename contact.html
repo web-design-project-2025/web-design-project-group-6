@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/contact.css" />
     <script src="js/main.js" defer></script>
     <script src="js/user.js" defer></script>
-    <script src="js/weather.js" defer></script>
 
+   
+    <script src="js/index.js" defer></script> 
+     <script src="js/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,9 +52,9 @@
       </div>
     </header>
     <main>
-      <section class="contact">
+      <section class="contact fade">
         <img src="images/contact1.jpeg" alt="picture1" />
-        <div class="contact-text">
+        <div class="contact-text fade">
           <h1>Contact us</h1>
           <p>We are here to assist you. Feel free to get in touch!</p>
         </div>
@@ -68,9 +70,9 @@
           <p><strong>📞 Phone:</strong> +421 589 538 214</p>
           <p><strong>📍 Address:</strong> 381 Huai Hai Zhong Road, Shanghai</p>
         </div>
-        <div class="contact-form">
+        <div class="contact-form fade">
           <h2>Send Us a Message</h2>
-          <form id="contactForm">
+          <form id="contactForm fade">
             <input
               type="text"
               id="name"
@@ -116,49 +118,43 @@
       </section>
     </main>
     <footer>
-      <div class="footer-links">
-        <div>
-          <h4>About</h4>
-          <a href="#">Destinations</a>
-          <a href="#">Blog</a>
-          <a href="#">Guide in Shanghai</a>
-        </div>
-        <div>
-          <h4>Destinations</h4>
-          <a href="#">Traffic Lines</a>
-          <a href="#">Blog</a>
-        </div>
-        <div>
-          <h4>Opportunities</h4>
-          <a href="#">Cooperation with us</a>
-          <a href="#">Media</a>
-        </div>
-        <div>
-          <h4 id="subscribe">Get 10% Off in your first order</h4>
-          <p id="subscribe-text">
-            Want to receive more discounts and event notifications?
-          </p>
-          <button class="subscribe-btn">Subscribe</button>
-        </div>
+      <div class="footer-links fade">
+          <div>
+              <h4>About</h4>
+              <a href="#">Destinations</a>
+              <a href="#">Blog</a>
+              <a href="#">Guide in Shanghai</a>
+          </div>
+          <div>
+              <h4>Destinations</h4>
+              <a href="#">Traffic Lines</a>
+              <a href="#">Blog</a>
+          </div>
+          <div>
+              <h4>Opportunities</h4>
+              <a href="#">Cooperation with us</a>
+              <a href="#">Media</a>
+          </div>
+          <div>
+              <h4 id="subscribe">Get 10% Off in your first order</h4>
+              <p id="subscribe-text">Want to receive more discounts and event notifications?</p>
+              <button class="subscribe-btn fade">Subscribe</button>
+          </div>
       </div>
-      <div class="footer-bottom">
-        <img
-          src="images/logo-shanghai.png"
-          alt="Visit-Shanghai-logo"
-          class="logo"
-        />
-        <div class="social-icons">
-          <img src="images/ins.png" alt="facebook" class="icon" />
-          <img src="images/insta.png" alt="instagram" class="icon" />
-          <img src="images/tiktok.png" alt="tiktok" class="icon" />
-          <img src="images/youtube.png" alt="youtube" class="icon" />
-        </div>
-        <div class="lan-container">
-          <img src="images/lan.png" alt="language" class="lan" />
-          <a href="#" class="en">EN</a>
-        </div>
+      <div class="footer-bottom fade">
+          <img src="images/logo-shanghai.png" alt="Visit-Shanghai-logo" class="logo">
+          <div class="social-icons">
+              <img src="images/ins.png" alt="facebook" class="icon">
+              <img src="images/insta.png" alt="instagram" class="icon">
+              <img src="images/tiktok.png" alt="tiktok" class="icon">
+              <img src="images/youtube.png" alt="youtube" class="icon">
+          </div>
+          <div class="lan-container fade">
+              <img src="images/lan.png" alt="language" class="lan">
+              <a href="#" class="en">EN</a>
+          </div>
       </div>
-      <p>© visitshanghai 2025</p>
-    </footer>
+      <p class="fade">© visitshanghai 2025</p>
+  </footer>
   </body>
 </html>
