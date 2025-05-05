@@ -42,19 +42,20 @@
 
         <div class="right">
           <div class="search-container">
+            <!-- the search input is here for semantic purposes - helps assistive technologies read it as search input - important for accessibility -->
             <input
               type="text"
               id="searchInput"
-              placeholder="Search activities, places, sights..."
+              placeholder="Search activities, places..."
             />
-            <button id="searchButton" class="search-btn" type="button">
-              <i class="fa fa-search"></i>
+            <button class="search-button" id="searchButton">
+              <i class="fas fa-search"></i>
             </button>
           </div>
           <div class="language-selector">
             <img src="images/lan.png" alt="language" class="lan" />
             <span class="selected-lang">EN</span>
-            <ul class="language-menu">
+            <ul class="language-menu hidden">
               <li data-lang="EN">English</li>
               <li data-lang="SV">Swedish</li>
               <li data-lang="ZH">Chinese</li>
