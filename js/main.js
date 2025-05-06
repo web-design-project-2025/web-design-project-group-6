@@ -109,3 +109,46 @@ searchInput.addEventListener("keydown", function (e) {
     searchButton.click();
   }
 });
+
+// food gallery carousel logic
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all the necessary elements
+  var track = document.querySelector(".gallery-track");
+  var prevButton = document.querySelector(".gallery-nav.prev");
+  var nextButton = document.querySelector(".gallery-nav.next");
+
+  // Set the starting index of visible items
+  var currentIndex = 0;
+
+  // Get the width of one gallery item, including the gap (approx 16px)
+  var galleryItem = track.querySelector(".gallery-item");
+  var itemWidth = galleryItem.offsetWidth + 16;
+
+  // Number of items visible at once
+  var visibleItems = 4;
+
+  // Total number of items in the gallery
+  var totalItems = track.children.length;
+
+  // Function to update the gallery position
+  function updateGallery() {
+    var moveX = currentIndex * itemWidth;
+    track.style.transform = "translateX(-" + moveX + "px)";
+  }
+
+  // When next button is clicked
+  nextButton.addEventListener("click", function () {
+    if (currentIndex < totalItems - visibleItems) {
+      currentIndex = currentIndex + 1;
+      updateGallery();
+    }
+  });
+
+  // When previous button is clicked
+  prevButton.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex = currentIndex - 1;
+      updateGallery();
+    }
+  });
+});
