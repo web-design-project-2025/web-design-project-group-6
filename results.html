@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/results.js" defer></script>
     <script src="js/user.js" defer></script>
+    <script src="js/index.js" defer></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,35 +48,50 @@
       </div>
     </header>
     <main>
-      <section class="results-container">
+      <section class="results-container fade">
         <div id="resultsGrid" class="grid-container"></div>
         <button id="showMoreBtn">Show more</button>
         <button id="showLessBtn">Show less</button>
       </section>
     </main>
     <footer>
-      <div class="footer-container">
-        <div class="column">
-          <img src="images/logo-shanghai.png" alt="Logo" />
-          <h3>Contact</h3>
-          <p>
-            Shanghai Central Plaza<br />
-            381 Huai Hai Zhong Road<br />
-            Shanghai 200020, China
-          </p>
-          <p>+421 589 538 214</p>
-        </div>
-
-        <div class="column">
-          <p><a href="about.html">About us</a></p>
-          <p><a href="blog.html">Blog articles</a></p>
-          <p><a href="contact.html">Contact us</a></p>
-        </div>
-
-        <div class="column">
-          <p>© Visit Shanghai 2025</p>
-        </div>
+      <div class="footer-links fade">
+          <div>
+              <h4>About</h4>
+              <a href="#">Destinations</a>
+              <a href="#">Blog</a>
+              <a href="#">Guide in Shanghai</a>
+          </div>
+          <div>
+              <h4>Destinations</h4>
+              <a href="#">Traffic Lines</a>
+              <a href="#">Blog</a>
+          </div>
+          <div>
+              <h4>Opportunities</h4>
+              <a href="#">Cooperation with us</a>
+              <a href="#">Media</a>
+          </div>
+          <div>
+              <h4 id="subscribe">Get 10% Off in your first order</h4>
+              <p id="subscribe-text">Want to receive more discounts and event notifications?</p>
+              <button class="subscribe-btn fade">Subscribe</button>
+          </div>
       </div>
-    </footer>
+      <div class="footer-bottom fade">
+          <img src="images/logo-shanghai.png" alt="Visit-Shanghai-logo" class="logo">
+          <div class="social-icons">
+              <img src="images/ins.png" alt="facebook" class="icon">
+              <img src="images/insta.png" alt="instagram" class="icon">
+              <img src="images/tiktok.png" alt="tiktok" class="icon">
+              <img src="images/youtube.png" alt="youtube" class="icon">
+          </div>
+          <div class="lan-container fade">
+              <img src="images/lan.png" alt="language" class="lan">
+              <a href="#" class="en">EN</a>
+          </div>
+      </div>
+      <p class="fade">© visitshanghai 2025</p>
+  </footer>
   </body>
 </html>

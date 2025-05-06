@@ -129,6 +129,18 @@ header {
   object-fit: contain;
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  animation-name: fade;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -327,8 +339,8 @@ body {
   flex-wrap: wrap;
   gap: 60px;
   margin-top: 60px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .blog-card {
