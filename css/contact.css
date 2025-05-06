@@ -154,7 +154,7 @@ footer {
 }
 
 .footer-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1.2px;
@@ -387,4 +387,31 @@ body {
 .contact-form form button:hover {
   background-color: white;
   color: #61648a;
+}
+
+/*weather-box*/
+
+.weather-box {
+  max-width: 300px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.weather-box:hover {
+  transform: scale(1.02);
+}
+
+.weather-box h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #17689c;
+}
+#weather-information {
+  font-size: 18px;
+  margin-top: 10px;
 }
