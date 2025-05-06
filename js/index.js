@@ -1,3 +1,4 @@
+
    // scrolling navigation bar control
    const header = document.querySelector('header');
    let lastScrollTop = 0;

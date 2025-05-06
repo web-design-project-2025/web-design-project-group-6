@@ -34,7 +34,6 @@
 
         <nav class="middle">
           <ul>
-            <li><a href="index.html">Search activities</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -42,8 +41,27 @@
         </nav>
 
         <div class="right">
-          <img src="images/lan.png" alt="language" class="lan" />
-          <a href="language.html" class="en">EN</a>
+          <div class="search-container">
+            <!-- the search input is here for semantic purposes - helps assistive technologies read it as search input - important for accessibility -->
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search activities, places..."
+            />
+            <div id="suggestions" class="suggestions-box"></div>
+            <button class="search-button" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="language-selector">
+            <img src="images/lan.png" alt="language" class="lan" />
+            <span class="selected-lang">EN</span>
+            <ul class="language-menu hidden">
+              <li data-lang="EN">English</li>
+              <li data-lang="SV">Swedish</li>
+              <li data-lang="ZH">Chinese</li>
+            </ul>
+          </div>
           <a href="language.html">Log in</a>
         </div>
       </div>
@@ -52,13 +70,12 @@
       <!-- Section 1: Hero with Search -->
       <section class="hero fade">
         <div class="hero-content">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="What activity are you searching for?"
-          />
-          <input type="date" id="dateInput" />
-          <button id="searchButton">Search</button>
+          <h1>Welcome to Shanghai</h1>
+          <p>
+            Explore the vibrant heart of China — from ancient temples to
+            futuristic skylines. Everything you can dream of in one place.
+          </p>
+          <button>Start Exploring</button>
         </div>
       </section>
 
@@ -70,6 +87,48 @@
           <div class="category" data-category="Events">Events</div>
           <div class="category" data-category="Food">Food</div>
           <div class="category" data-category="Hotels">Hotels</div>
+        </div>
+      </section>
+
+      <!-- Section 3: Food -->
+
+      <section class="food-gallery">
+        <h2 class="food-gallery-title">
+          Tickle your taste buds with culinary specialities of Shanghai
+        </h2>
+        <div class="gallery-container">
+          <div class="gallery-track">
+            <div class="gallery-item">
+              <img src="images/shanghai-food-one.jpeg" alt="Food 1" />
+              <p><strong>Xiaolongbao</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-two.jpeg" alt="Food 2" />
+              <p><strong>Shanghai Noodles</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-three.jpeg" alt="Food 3" />
+              <p><strong>Cong You Bing</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-four.jpeg" alt="Food 4" />
+              <p><strong>Crab Shell Cake</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-five.jpeg" alt="Food 5" />
+              <p><strong>Red Braised Pork</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-six.jpeg" alt="Food 6" />
+              <p><strong>Sticky Rice Balls</strong></p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/shanghai-food-seven.jpeg" alt="Food 7" />
+              <p><strong>Drunken Chicken</strong></p>
+            </div>
+          </div>
+          <button class="gallery-nav prev">&#10094;</button>
+          <button class="gallery-nav next">&#10095;</button>
         </div>
       </section>
 
@@ -115,12 +174,12 @@
       <!-- Section 5: Last Minute Deal -->
       <section class="last-minute fade">
         <div class="last-minute-overlay">
-          <h2>Last Minute Deal - 15% Off!</h2>
-          <button class="book-btn">Book</button>
+          <h2>Last minute discount: up to 40% off on popular tours!</h2>
+          <button class="btn-transparent">Book</button>
         </div>
       </section>
     </main>
-    <hr id="hr">
+    <hr id="hr" />
     <footer>
         <div class="footer-links fade">
             <div>

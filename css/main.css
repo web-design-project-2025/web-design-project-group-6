@@ -24,8 +24,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -79,7 +80,7 @@ header {
 }
 
 .right {
-  flex: 1;
+  flex: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
@@ -104,7 +105,7 @@ header {
   color: black;
   font-size: 20px;
   position: relative;
-  width: fit-content;
+  width: 55px;
   display: block;
 }
 
@@ -129,6 +130,75 @@ header {
   object-fit: contain;
 }
 
+/* Search Bar Styling */
+.search-container {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 250px;
+  transition: border-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.search-container #searchInput {
+  width: 100%;
+  padding: 2px 10px 2px 2px; /* right padding increased for button space */
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background-color: #17689c;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #12567e;
+}
+
+.search-container:hover {
+  border-color: #12567e;
+}
+
+/* Autofill box */
+.suggestions-box {
+  position: absolute; /* Position the suggestions box relative to the search-container */
+  top: 100%; /* Start the suggestions box just below the search input */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%; /* Same width as the search input */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 20px;
+  display: none;
+  margin-top: 3px;
+}
+
+.suggestions-box div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions-box div:hover {
+  background-color: #f0f0f0;
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -137,11 +207,59 @@ a {
   color: black;
 }
 
+/* Language drop down menu*/
+.language-selector {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-lang {
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  width: 90px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.language-menu li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.language-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.language-menu.show {
+  display: block;
+}
 /* Footer */
 footer {
   padding: 20px;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer-links {
@@ -170,7 +288,7 @@ footer {
 }
 
 .footer-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1.2px;
@@ -211,7 +329,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 60px auto 0;
   padding: 0 50px;
   position: relative;
@@ -296,10 +414,10 @@ body {
 
 /* Section 1: Hero */
 .hero {
-  background-image: url("../images/background-image.jpg");
+  background-image: url("../images/shanghai-skyline.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   color: white;
   display: flex;
   align-items: center;
@@ -308,33 +426,48 @@ body {
 }
 
 .hero-content {
-  width: 20rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
-.hero input[type="text"],
-.hero input[type="date"] {
-  padding: 0.75rem;
-  font-size: 1rem;
-  width: 100%;
-  border: none;
-  border-radius: 0.25rem;
+.hero-content h1 {
+  font-size: 3.5vw;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
 }
 
-.hero button {
-  padding: 0.75rem;
-  background-color: #ec5e5e;
+.hero-content p {
+  font-size: 1.3vw;
+  font-weight: 500;
+  justify-content: center;
+  color: #fff;
+  max-width: 30vw;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.hero-content button {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: white;
+  border-radius: 5px;
   color: white;
-  border: none;
-  border-radius: 0.25rem;
   font-size: 1rem;
-  width: 10rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0;
+}
+
+.hero-content button:hover {
+  background-color: #17689c;
+  border-color: #17689c;
 }
 
 /* Section 2: Shortcuts */
@@ -342,10 +475,16 @@ body {
   padding: 3rem 1rem;
   text-align: center;
 }
-
+.shortcuts h2 {
+  font-size: 2vw;
+  color: #17689c;
+  padding: 0.2vw;
+  margin: 0;
+}
 .category-row {
   display: flex;
   margin-top: 2rem;
+  gap: 1rem;
 }
 
 .category {
@@ -359,13 +498,15 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .category:nth-child(1) {
   background-image: url("../images/museum.jpg");
 }
 .category:nth-child(2) {
-  background-image: url("../images/jing-temple.jpg");
+  background-image: url("../images/shortcut-event.jpg");
 }
 .category:nth-child(3) {
   background-image: url("../images/food.jpg");
@@ -393,7 +534,7 @@ body {
 }
 
 .promo-text a {
-  color: #ec5e5e;
+  color: #17689c;
   text-decoration: none;
   font-weight: bold;
 }
@@ -406,6 +547,7 @@ body {
 
 .top-rated-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
@@ -421,18 +563,18 @@ body {
 }
 
 .small {
-  width: 10vw;
+  width: 16vw;
 }
 .medium {
-  width: 12vw;
+  width: 18vw;
 }
 .large {
-  width: 16vw;
+  width: 20vw;
 }
 
 /* Section 5: Last Minute */
 .last-minute {
-  background-image: url("../images/yu-garden.jpg");
+  background-image: url("../images/shanghai-vie-sky.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -441,21 +583,21 @@ body {
   position: relative;
 }
 
-.last-minute-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  display: inline-block;
-  border-radius: 0.5rem;
-}
-
-.book-btn {
-  background-color: #ec5e5e;
+.btn-transparent {
+  background-color: transparent;
   color: white;
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 0.25rem;
   margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-transparent:hover {
+  background-color: #17689c;
+  border: #17689c;
 }
 /*RESULTS PAGE*/
 
@@ -574,5 +716,76 @@ body {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
+  }
+}
+
+/*Food gallery section*/
+
+.food-gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.food-gallery-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.gallery-item {
+  flex: 0 0 22%; /* Show 4 items at a time */
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.gallery-nav.prev {
+  left: 10px;
+}
+
+.gallery-nav.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 45%;
   }
 }
