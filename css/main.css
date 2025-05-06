@@ -216,8 +216,23 @@ a {
   align-items: center;
 }
 
+.language-selector::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.2px;
+  background: black;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.language-selector:hover::after {
+  width: 100%;
+}
+
 .selected-lang {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   font-size: 20px;
 }
 
