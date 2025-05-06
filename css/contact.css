@@ -303,14 +303,15 @@ body {
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 50%;
+  top: 30%;
   color: white;
   transform: translate(-50%, -50%);
 }
 
 .contact-text h1 {
   font-size: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
 .contact-text p {
@@ -338,6 +339,7 @@ body {
 .contact-container-text h1 {
   margin-bottom: 90px;
   font-size: 28px;
+  font-weight: 500;
 }
 .contact-container-text h2 {
   margin-bottom: 20px;

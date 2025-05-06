@@ -476,13 +476,12 @@ body {
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   margin-left: 0;
 }
 
 .hero-content button:hover {
-  background-color: #17689c;
-  border-color: #17689c;
+  transform: translateY(-3px);
 }
 
 /* Section 2: Shortcuts */
@@ -589,7 +588,7 @@ body {
 
 /* Section 5: Last Minute */
 .last-minute {
-  background-image: url("../images/shanghai-vie-sky.jpg");
+  background-image: url("../images/WechatIMG779.jpg");
   background-size: cover;
   background-position: center;
   color: white;
