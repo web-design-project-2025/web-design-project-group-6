@@ -111,6 +111,7 @@ header {
   position: relative;
   width: fit-content;
   display: block;
+  width: 55px;
 }
 
 .right a::after {
