@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/blog.css" />
     <script src="js/main.js" defer></script>
     <script src="js/user.js" defer></script>
+    <script src="js/index.js" defer></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,7 +49,7 @@
       </div>
     </header>
     <main>
-      <div class="blog-part1">
+      <div class="blog-part1 fade">
         <img src="images/blog-background.jpeg" alt="background" />
         <p>
           Our blog features popular articles, travel videos, top recommended
@@ -58,31 +59,31 @@
         </p>
       </div>
 
-      <section class="blog-container1">
+      <section class="blog-container1 fade">
         <h1>Recommended Places</h1>
 
-        <div class="card-list">
+        <div class="card-list fade">
           <div class="blog-card">
             <img src="images/blog1.jpeg" alt="picture1" />
             <p>Wukang Road<br /><span>7.2⭐️</span></p>
           </div>
 
-          <div class="blog-card">
+          <div class="blog-card fade">
             <img src="images/blog2.jpeg" alt="picture2" />
             <p>Shanghai Old City<br /><span>6.8⭐️</span></p>
           </div>
 
-          <div class="blog-card">
+          <div class="blog-card fade">
             <img src="images/blog3.jpeg" alt="picture3" />
             <p>East Nanjing Road<br /><span>9.3⭐️</span></p>
           </div>
 
-          <div class="blog-card">
+          <div class="blog-card fade">
             <img src="images/blog4.jpeg" alt="picture4" />
             <p>The Bund<br /><span>8.5⭐️</span></p>
           </div>
 
-          <div class="blog-card">
+          <div class="blog-card fade">
             <img src="images/blog5.jpeg" alt="picture5" />
             <p>Shanghai Disney Land<br /><span>7.4⭐️</span></p>
           </div>
@@ -90,10 +91,10 @@
         <a href="top-destination.html" class="blog-button">Show more</a>
       </section>
 
-      <section class="blog-container2">
+      <section class="blog-container2 fade">
         <h1>Top-rated Travel Routes</h1>
 
-        <div class="blog-routes">
+        <div class="blog-routes fade">
           <div>
             <h3>Shanghai City Highlights</h3>
             <hr class="line" />
@@ -125,7 +126,7 @@
         </div>
       </section>
 
-      <section class="blog-container3">
+      <section class="blog-container3 fade">
         <h1>Popular Articles</h1>
         <div class="blog-article-img">
           <img src="images/blog6.jpeg" alt="picture6" />
@@ -135,7 +136,7 @@
         <a href="blog's article.html" class="blog-button">Show more</a>
       </section>
 
-      <section class="blog-container4">
+      <section class="blog-container4 fade">
         <h1>Related Videos</h1>
         <div class="blog-video-img">
           <div class="left-img">
@@ -150,49 +151,43 @@
       </section>
     </main>
     <footer>
-      <div class="footer-links">
-        <div>
-          <h4>About</h4>
-          <a href="#">Destinations</a>
-          <a href="#">Blog</a>
-          <a href="#">Guide in Shanghai</a>
-        </div>
-        <div>
-          <h4>Destinations</h4>
-          <a href="#">Traffic Lines</a>
-          <a href="#">Blog</a>
-        </div>
-        <div>
-          <h4>Opportunities</h4>
-          <a href="#">Cooperation with us</a>
-          <a href="#">Media</a>
-        </div>
-        <div>
-          <h4 id="subscribe">Get 10% Off in your first order</h4>
-          <p id="subscribe-text">
-            Want to receive more discounts and event notifications?
-          </p>
-          <button class="subscribe-btn">Subscribe</button>
-        </div>
+      <div class="footer-links fade">
+          <div>
+              <h4>About</h4>
+              <a href="#">Destinations</a>
+              <a href="#">Blog</a>
+              <a href="#">Guide in Shanghai</a>
+          </div>
+          <div>
+              <h4>Destinations</h4>
+              <a href="#">Traffic Lines</a>
+              <a href="#">Blog</a>
+          </div>
+          <div>
+              <h4>Opportunities</h4>
+              <a href="#">Cooperation with us</a>
+              <a href="#">Media</a>
+          </div>
+          <div>
+              <h4 id="subscribe">Get 10% Off in your first order</h4>
+              <p id="subscribe-text">Want to receive more discounts and event notifications?</p>
+              <button class="subscribe-btn fade">Subscribe</button>
+          </div>
       </div>
-      <div class="footer-bottom">
-        <img
-          src="images/logo-shanghai.png"
-          alt="Visit-Shanghai-logo"
-          class="logo"
-        />
-        <div class="social-icons">
-          <img src="images/ins.png" alt="facebook" class="icon" />
-          <img src="images/insta.png" alt="instagram" class="icon" />
-          <img src="images/tiktok.png" alt="tiktok" class="icon" />
-          <img src="images/youtube.png" alt="youtube" class="icon" />
-        </div>
-        <div class="lan-container">
-          <img src="images/lan.png" alt="language" class="lan" />
-          <a href="#" class="en">EN</a>
-        </div>
+      <div class="footer-bottom fade">
+          <img src="images/logo-shanghai.png" alt="Visit-Shanghai-logo" class="logo">
+          <div class="social-icons">
+              <img src="images/ins.png" alt="facebook" class="icon">
+              <img src="images/insta.png" alt="instagram" class="icon">
+              <img src="images/tiktok.png" alt="tiktok" class="icon">
+              <img src="images/youtube.png" alt="youtube" class="icon">
+          </div>
+          <div class="lan-container fade">
+              <img src="images/lan.png" alt="language" class="lan">
+              <a href="#" class="en">EN</a>
+          </div>
       </div>
-      <p>© visitshanghai 2025</p>
-    </footer>
+      <p class="fade">© visitshanghai 2025</p>
+  </footer>
   </body>
 </html>
