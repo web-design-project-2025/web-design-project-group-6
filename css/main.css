@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -140,6 +140,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .search-container #searchInput {
@@ -166,6 +167,36 @@ header {
 
 .search-button:hover {
   background-color: #12567e;
+}
+
+.search-container:hover {
+  border-color: #12567e;
+}
+
+/* Autofill box */
+.suggestions-box {
+  position: absolute; /* Position the suggestions box relative to the search-container */
+  top: 100%; /* Start the suggestions box just below the search input */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%; /* Same width as the search input */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 20px;
+  display: none;
+  margin-top: 3px;
+}
+
+.suggestions-box div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions-box div:hover {
+  background-color: #f0f0f0;
 }
 
 /* Links */
@@ -201,14 +232,12 @@ a {
   padding-bottom: 5px;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 120px;
+  margin: 0;
+  width: 90px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 100;
+  border-radius: 20px;
 }
 
 .language-menu li {
@@ -230,7 +259,7 @@ a {
 footer {
   padding: 20px;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer-links {
@@ -300,7 +329,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 60px auto 0;
   padding: 0 50px;
   position: relative;
@@ -495,6 +524,7 @@ body {
 
 .top-rated-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;

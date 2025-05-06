@@ -45,3 +45,67 @@ document.addEventListener("DOMContentLoaded", function () {
     languageMenu.classList.remove("show");
   });
 });
+
+//autofill feature
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const suggestionsBox = document.getElementById("suggestions");
+  let suggestions = [];
+
+  // Fetch JSON data
+  fetch("../json/autofill.json")
+    .then((response) => response.json())
+    .then((data) => {
+      suggestions = data;
+    })
+    .catch((error) => {
+      console.error("Failed to load suggestions:", error);
+    });
+
+  // Handle input
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+    suggestionsBox.innerHTML = "";
+
+    if (query.length === 0) {
+      suggestionsBox.style.display = "none";
+      return;
+    }
+
+    const filtered = suggestions.filter((item) =>
+      item.toLowerCase().includes(query)
+    );
+
+    if (filtered.length === 0) {
+      suggestionsBox.style.display = "none";
+      return;
+    }
+
+    filtered.forEach((item) => {
+      const div = document.createElement("div");
+      div.textContent = item;
+      div.addEventListener("click", function () {
+        searchInput.value = item;
+        suggestionsBox.style.display = "none";
+      });
+      suggestionsBox.appendChild(div);
+    });
+
+    suggestionsBox.style.display = "block";
+  });
+
+  // Hide suggestions on outside click
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".search-container")) {
+      suggestionsBox.style.display = "none";
+    }
+  });
+});
+
+// this simulates pressing enter as if it were the click - made for simplification reasons
+searchInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    searchButton.click();
+  }
+});
