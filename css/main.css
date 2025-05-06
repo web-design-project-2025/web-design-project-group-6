@@ -22,6 +22,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .nav-container {
@@ -690,6 +691,21 @@ body {
 .fade.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #fbf9f9;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
