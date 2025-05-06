@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/contact.css" />
     <script src="js/main.js" defer></script>
     <script src="js/user.js" defer></script>
-
-   
     <script src="js/index.js" defer></script> 
      <script src="js/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +24,7 @@
     <header>
       <div class="nav-container">
         <div class="left">
-          <a href=" ">
+          <a href="index.html">
             <img
               class="logo"
               src="images/logo-shanghai.png"
@@ -37,7 +35,6 @@
 
         <nav class="middle">
           <ul>
-            <li><a href="index.html">Search activities</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -45,12 +42,33 @@
         </nav>
 
         <div class="right">
-          <img src="images/lan.png" alt="language" class="lan" />
-          <a href="language.html" class="en">EN</a>
-          <a href="#" id="login">Log in</a>
+          <div class="search-container">
+            <!-- the search input is here for semantic purposes - helps assistive technologies read it as search input - important for accessibility -->
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search activities, places..."
+              autocomplete="off"
+            />
+            <div id="suggestions" class="suggestions-box"></div>
+            <button class="search-button" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="language-selector">
+            <img src="images/lan.png" alt="language" class="lan" />
+            <span class="selected-lang">EN</span>
+            <ul class="language-menu hidden">
+              <li data-lang="EN">English</li>
+              <li data-lang="SV">Swedish</li>
+              <li data-lang="ZH">Chinese</li>
+            </ul>
+          </div>
+          <a href="language.html">Log in</a>
         </div>
       </div>
     </header>
+    
     <main>
       <section class="contact fade">
         <img src="images/Elia-Locardi-Travel-Photography-Shanghai-City-Of-Lights-China-1440-WM-DM-60q copy.jpg" alt="picture1" />
@@ -59,7 +77,7 @@
           <p>We are here to assist you. Feel free to get in touch!</p>
         </div>
       </section>
-      <section class="contact-container">
+      <section class="contact-container fade">
         <div class="contact-container-text">
           <h1>
             Have a question, idea, or proposal? We'd love to hear from you.
@@ -106,9 +124,9 @@
         </div>
       </section>
       <section>
-        <div class="weather-box">
+        <div class="weather-box fade">
           <h2>Weather in Shanghai</h2>
-          <div id="weather-information">
+          <div id="weather-information fade">
             <p>
               Please wait a moment. The weather information will be displayed
               shortly.⏳

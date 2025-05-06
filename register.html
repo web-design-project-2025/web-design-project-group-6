@@ -42,7 +42,28 @@
         </nav>
 
         <div class="right">
-          <a href="language.html">EN</a>
+          <div class="search-container">
+            <!-- the search input is here for semantic purposes - helps assistive technologies read it as search input - important for accessibility -->
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search activities, places..."
+              autocomplete="off"
+            />
+            <div id="suggestions" class="suggestions-box"></div>
+            <button class="search-button" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="language-selector">
+            <img src="images/lan.png" alt="language" class="lan" />
+            <span class="selected-lang">EN</span>
+            <ul class="language-menu hidden">
+              <li data-lang="EN">English</li>
+              <li data-lang="SV">Swedish</li>
+              <li data-lang="ZH">Chinese</li>
+            </ul>
+          </div>
           <a href="language.html">Log in</a>
         </div>
       </div>

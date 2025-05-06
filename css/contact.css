@@ -1,4 +1,7 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Jost";
 }
 
@@ -7,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: #f9f9f9;
 }
 
 /* NAVIGATION BAR */
@@ -43,7 +47,7 @@ header {
 
 .middle {
   flex: 2;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -54,8 +58,28 @@ header {
   gap: 2rem;
   padding: 0;
   margin: 0 15px;
-  width: fit-content;
+  justify-content: center;
+}
+
+.middle li {
+  display: block;
   position: relative;
+  width: fit-content;
+}
+
+.middle li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.2px;
+  background: black;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.middle li:hover::after {
+  width: 100%;
 }
 
 .right {
@@ -109,6 +133,75 @@ header {
   object-fit: contain;
 }
 
+/* Search Bar Styling */
+.search-container {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 250px;
+  transition: border-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.search-container #searchInput {
+  width: 100%;
+  padding: 2px 10px 2px 2px; /* right padding increased for button space */
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background-color: #17689c;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #12567e;
+}
+
+.search-container:hover {
+  border-color: #12567e;
+}
+
+/* Autofill box */
+.suggestions-box {
+  position: absolute; /* Position the suggestions box relative to the search-container */
+  top: 100%; /* Start the suggestions box just below the search input */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%; /* Same width as the search input */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 20px;
+  display: none;
+  margin-top: 3px;
+}
+
+.suggestions-box div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions-box div:hover {
+  background-color: #f0f0f0;
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -118,9 +211,70 @@ a {
   transition: 0.3s ease;
 }
 
-a:hover {
-  color: #61648a;
+/* Language drop down menu*/
+.language-selector {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.language-selector::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.2px;
+  background: black;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.language-selector:hover::after {
+  width: 100%;
+}
+
+.selected-lang {
+  padding-left: 0.5rem;
+  font-size: 20px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  width: 90px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+  border-radius: 20px;
+}
+
+.language-menu li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.language-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.language-menu.show {
+  display: block;
+}
+
 /* Footer */
 footer {
   padding: 20px;
@@ -416,4 +570,55 @@ body {
 #weather-information {
   font-size: 18px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      padding: 15px;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    .middle {
+      width: 100%;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    .middle a {
+      font-size: 18px;
+      margin: 0 5px;
+    }
+    .right {
+      width: 100%;
+      justify-content: center;
+      margin-top: 5px;
+      gap: 10px;
+    }
+  .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 0 15px;
+  }
+  
+  .footer-links div:last-child {
+      grid-column: span 2; 
+      text-align: center;
+  }
+  
+  .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0;
+      margin: 40px auto 0;
+  }
+  
+  .footer-bottom .logo {
+      text-align: center;
+      margin: 0 0 10px;
+      flex: none;
+  }
 }
