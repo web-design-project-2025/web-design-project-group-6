@@ -3,11 +3,19 @@
     {
       "id": "shanghai_museum",
       "name": "Shanghai Museum",
+      "category": "Museum",
       "price_sek": 450,
       "description": "Explore China's rich history through ancient Chinese art and artifacts.",
       "image_url": "images/museum.jpg",
-      "location": "Shanghai",
-      "duration": "2 hours"
+      "location": "201 Renmin Ave, Huangpu, Shanghai",
+      "duration": "2 hours",
+      "carousel_images": [
+        "images/musem.jpg",
+        "images/musem.jpg",
+        "images/musem.jpg",
+        "images/musem.jpg",
+        "images/musem.jpg"
+      ]
     },
     {
       "id": "guanfu_museum",
