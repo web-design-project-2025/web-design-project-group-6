@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Visit Shanghai</title>
+      <link rel="stylesheet" href="css/main.css" />
+      <script src="js/main.js" defer></script>
+      <script src="js/index.js" defer></script>
+      <script src="js/user.js" defer></script>
+      <script src="js/activity.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet"
+      />
+      <script
+        src="https://kit.fontawesome.com/0055f1c135.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+    <body>
+      <!-- HEADER -->
+      <header>
+        <div class="nav-container">
+          <div class="left">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="images/logo-shanghai.png"
+                alt="Visit-Shanghai-logo"
+              />
+            </a>
+          </div>
+
+          <nav class="middle">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="right">
+            <div class="search-container">
+              <!-- the search input is here for semantic purposes - helps assistive technologies read it as search input - important for accessibility -->
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search activities, places..."
+                autocomplete="off"
+              />
+              <div id="suggestions" class="suggestions-box"></div>
+              <button class="search-button" id="searchButton">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="language-selector">
+              <img src="images/lan.png" alt="language" class="lan" />
+              <span class="selected-lang">EN</span>
+              <ul class="language-menu hidden">
+                <li data-lang="EN">English</li>
+                <li data-lang="SV">Swedish</li>
+                <li data-lang="ZH">Chinese</li>
+              </ul>
+            </div>
+            <a href="language.html">Log in</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="activity-hero" id="activityHero">
+        <div class="hero-text">
+          <h1 id="activityName"></h1>
+          <p id="activityCategory"></p>
+        </div>
+      </section>
+
+      <!-- MAIN CONTENT -->
+      <main class="activity-main">
+        <div class="activity-details">
+          <div class="text-info">
+            <h2>About</h2>
+            <p id="activityDescription"></p>
+            <h3>Address</h3>
+            <p id="activityAddress"></p>
+            <h3>Duration</h3>
+            <p><span id="activityDuration"></span> minutes</p>
+          </div>
+
+          <div class="carousel" id="carouselContainer">
+            <!-- Carousel items injected here -->
+          </div>
+        </div>
+
+        <div class="book-button-container">
+          <button class="book-btn">Book this activity</button>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-links fade">
+          <div>
+            <h4>About</h4>
+            <a href="#">Destinations</a>
+            <a href="#">Blog</a>
+            <a href="#">Guide in Shanghai</a>
+          </div>
+          <div>
+            <h4>Destinations</h4>
+            <a href="#">Traffic Lines</a>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <h4>Opportunities</h4>
+            <a href="#">Cooperation with us</a>
+            <a href="#">Media</a>
+          </div>
+          <div>
+            <h4 id="subscribe">Get 10% Off in your first order</h4>
+            <p id="subscribe-text">
+              Want to receive more discounts and event notifications?
+            </p>
+            <button class="subscribe-btn fade">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-bottom fade">
+          <img
+            src="images/logo-shanghai.png"
+            alt="Visit-Shanghai-logo"
+            class="logo"
+          />
+          <div class="social-icons">
+            <img src="images/ins.png" alt="facebook" class="icon" />
+            <img src="images/insta.png" alt="instagram" class="icon" />
+            <img src="images/tiktok.png" alt="tiktok" class="icon" />
+            <img src="images/youtube.png" alt="youtube" class="icon" />
+          </div>
+          <div class="lan-container fade">
+            <img src="images/lan.png" alt="language" class="lan" />
+            <a href="#" class="en">EN</a>
+          </div>
+        </div>
+        <p class="fade">© visitshanghai 2025</p>
+      </footer>
+    </body>
+  </html>
+</html>
