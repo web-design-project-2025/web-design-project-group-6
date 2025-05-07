@@ -5,16 +5,16 @@
       "name": "Shanghai Museum",
       "category": "Museum",
       "price_sek": 450,
-      "description": "Explore China's rich history through ancient Chinese art and artifacts.",
+      "description": "Explore China's rich history through ancient Chinese art and artifacts. The Shanghai museum offers sighting of rare artifacts of the Chinese culture. Exhibits include Ancient Chinese Bronz, Sculpture, Jades, Numismatics, and many more.",
       "image_url": "images/museum.jpg",
       "location": "201 Renmin Ave, Huangpu, Shanghai",
-      "duration": "2 hours",
+      "duration": "120",
       "carousel_images": [
-        "images/musem.jpg",
-        "images/musem.jpg",
-        "images/musem.jpg",
-        "images/musem.jpg",
-        "images/musem.jpg"
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
       ]
     },
     {

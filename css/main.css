@@ -834,7 +834,7 @@ body {
 /*ACTIVITY PAGE*/
 
 .activity-hero {
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -845,14 +845,21 @@ body {
 
 .hero-text {
   color: white;
-  background: rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
   border-radius: 10px;
 }
 
+.hero-text h1 {
+  font-size: 3.5vw;
+}
+
+.hero-text p {
+  font-size: 3vw;
+}
+
 .activity-main {
-  max-width: 1200px;
-  margin: 2rem auto;
+  max-width: 100%;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
