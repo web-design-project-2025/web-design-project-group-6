@@ -25,7 +25,7 @@
       "description": "Discover traditional Chinese craftsmanship and antique furniture.",
       "image_url": "images/museum.jpg",
       "location": "Shanghai",
-      "duration": "1.5 hours"
+      "duration": "1.5 hours",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -42,7 +42,7 @@
       "description": "Experience authentic local cuisine with guided tastings.",
       "image_url": "images/museum.jpg",
       "location": "Shanghai",
-      "duration": "3 hours"
+      "duration": "3 hours",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
