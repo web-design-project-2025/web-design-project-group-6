@@ -22,7 +22,7 @@ fetch("json/activities.json")
 
     document.getElementById("activityDescription").textContent =
       activity.description;
-    document.getElementById("activityAddress").textContent = activity.address;
+    document.getElementById("activityAddress").textContent = activity.location;
     document.getElementById("activityDuration").textContent = activity.duration;
 
     var carousel = document.getElementById("carouselContainer");

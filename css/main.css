@@ -577,13 +577,31 @@ body {
 }
 
 .small {
-  width: 16vw;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .medium {
-  width: 18vw;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .large {
-  width: 20vw;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Section 5: Last Minute */
