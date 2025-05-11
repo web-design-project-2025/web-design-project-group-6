@@ -40,15 +40,15 @@
       "category": "Food Tour",
       "price_sek": 850,
       "description": "Experience authentic local cuisine with guided tastings in hidden alleyways and bustling markets.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/food-two.jpg",
       "location": "Old Town, Huangpu, Shanghai",
       "duration": "180",
       "carousel_images": [
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg"
+        "images/food-seven.jpg",
+        "images/dim-one.jpg",
+        "images/food-three.jpg",
+        "images/food-four.jpg",
+        "images/food-one.jpg"
       ]
     },
     {
@@ -295,12 +295,12 @@
       "category": "Food Tour",
       "price_sek": 700,
       "description": "Learn to make authentic Chinese dumplings and dim sum in this hands-on culinary experience.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/dim-one.jpg",
       "location": "Xintiandi, Huangpu, Shanghai",
       "duration": "180",
       "carousel_images": [
-        "images/museum.jpg",
-        "images/museum.jpg",
+        "images/dim-one.jpg",
+        "images/dim-two.jpg",
         "images/museum.jpg",
         "images/museum.jpg",
         "images/museum.jpg"
