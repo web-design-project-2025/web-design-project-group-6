@@ -23,9 +23,9 @@
       "category": "Museum",
       "price_sek": 150,
       "description": "Discover traditional Chinese craftsmanship, antique furniture, ceramics, and calligraphy in this private art museum.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/museum-one.jpg",
       "location": "18 Zhongshan East 1st Rd, Huangpu, Shanghai",
-      "duration": "1.5 hours",
+      "duration": "160",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -40,15 +40,15 @@
       "category": "Food Tour",
       "price_sek": 850,
       "description": "Experience authentic local cuisine with guided tastings in hidden alleyways and bustling markets.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/food-two.jpg",
       "location": "Old Town, Huangpu, Shanghai",
-      "duration": "3 hours",
+      "duration": "180",
       "carousel_images": [
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg"
+        "images/food-seven.jpg",
+        "images/dim-one.jpg",
+        "images/food-three.jpg",
+        "images/food-four.jpg",
+        "images/food-one.jpg"
       ]
     },
     {
@@ -57,9 +57,9 @@
       "category": "Food Tour",
       "price_sek": 900,
       "description": "Explore Shanghai's hidden food gems with expert guides, sampling dishes at family-run eateries.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/food-three.jpg",
       "location": "Xiangyang Rd, Xuhui District, Shanghai",
-      "duration": "3 hours",
+      "duration": "120",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -74,9 +74,9 @@
       "category": "Cruise",
       "price_sek": 600,
       "description": "Enjoy a scenic evening cruise along the Huangpu River, offering views of both historic and modern Shanghai.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/shanghai-vie-sky.jpg",
       "location": "Zhongshan East 1st Rd, The Bund, Shanghai",
-      "duration": "1 hour",
+      "duration": "60",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -93,7 +93,7 @@
       "description": "Get panoramic views from China's tallest building at the Shanghai Tower’s observation deck.",
       "image_url": "images/museum.jpg",
       "location": "501 Yincheng Middle Rd, Lujiazui, Pudong, Shanghai",
-      "duration": "1 hour",
+      "duration": "60",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -108,9 +108,9 @@
       "category": "Garden",
       "price_sek": 300,
       "description": "Stroll through a classical Chinese garden in the heart of the city, filled with pavilions, ponds, and rockeries.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/garden-six.jpg",
       "location": "218 Anren St, Huangpu, Shanghai",
-      "duration": "2 hours",
+      "duration": "120",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -125,9 +125,9 @@
       "category": "Temple",
       "price_sek": 250,
       "description": "Visit a serene Buddhist temple housing two jade Buddha statues brought from Burma.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/temple-one.jpg",
       "location": "170 Anyuan Rd, Jing'an, Shanghai",
-      "duration": "1.5 hours",
+      "duration": "150",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -144,7 +144,7 @@
       "description": "Explore the charming tree-lined streets of Shanghai's historic French Concession district with colonial architecture and local shops.",
       "image_url": "images/museum.jpg",
       "location": "Wukang Rd, Xuhui District, Shanghai",
-      "duration": "2 hours",
+      "duration": "120",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -161,7 +161,7 @@
       "description": "Experience Disney magic with themed attractions, shows, and entertainment for all ages.",
       "image_url": "images/museum.jpg",
       "location": "Chuansha New Town, Pudong, Shanghai",
-      "duration": "Full day",
+      "duration": "120",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -178,24 +178,7 @@
       "description": "Learn about Shanghai's development through interactive exhibits and a large-scale city model.",
       "image_url": "images/museum.jpg",
       "location": "100 People's Ave, Huangpu, Shanghai",
-      "duration": "1.5 hours",
-      "carousel_images": [
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg",
-        "images/museum.jpg"
-      ]
-    },
-    {
-      "id": "propaganda_poster_art_centre",
-      "name": "Propaganda Poster Art Centre",
-      "category": "Museum",
-      "price_sek": 180,
-      "description": "View a unique collection of Chinese propaganda posters from the Mao era in this underground gallery.",
-      "image_url": "images/museum.jpg",
-      "location": "868 Huashan Rd, Changning, Shanghai",
-      "duration": "1 hour",
+      "duration": "150",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -212,7 +195,7 @@
       "description": "Enjoy a spectacular acrobatic performance showcasing Chinese culture, music, and daring stunts.",
       "image_url": "images/museum.jpg",
       "location": "2266 Gonghexin Rd, Jing'an, Shanghai",
-      "duration": "2 hours",
+      "duration": "120",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
@@ -227,9 +210,519 @@
       "category": "Zoo",
       "price_sek": 350,
       "description": "Visit one of China's oldest zoos, home to diverse wildlife including pandas, big cats, and tropical birds.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/zoo-one.jpg",
       "location": "2381 Hongqiao Rd, Changning, Shanghai",
-      "duration": "2 hours",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "power_station_of_art",
+      "name": "Power Station of Art",
+      "category": "Museum",
+      "price_sek": 200,
+      "description": "China’s first state-run contemporary art museum, located in a former power plant, showcasing innovative art exhibitions.",
+      "image_url": "images/museum.jpg",
+      "location": "200 Huayuangang Rd, Huangpu, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_natural_history",
+      "name": "Shanghai Natural History Museum",
+      "category": "Museum",
+      "price_sek": 180,
+      "description": "Explore dinosaurs, ancient fossils, and immersive nature displays at one of China's largest natural history museums.",
+      "image_url": "images/museum-three.jpg",
+      "location": "510 Beijing West Rd, Jing'an, Shanghai",
+      "duration": "150",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_brewery_tour",
+      "name": "Shanghai Brewery Tour",
+      "category": "Food Tour",
+      "price_sek": 550,
+      "description": "Taste locally brewed craft beers and learn about Shanghai’s growing beer scene with expert guides.",
+      "image_url": "images/craft-one.jpg",
+      "location": "83 Changshu Rd, Xuhui, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_dim_sum_class",
+      "name": "Shanghai Dim Sum Cooking Class",
+      "category": "Food Tour",
+      "price_sek": 700,
+      "description": "Learn to make authentic Chinese dumplings and dim sum in this hands-on culinary experience.",
+      "image_url": "images/dim-one.jpg",
+      "location": "Xintiandi, Huangpu, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/dim-one.jpg",
+        "images/dim-two.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "jinjiang_hotel_shanghai",
+      "name": "Jin Jiang Hotel Shanghai",
+      "category": "Hotel",
+      "price_sek": 1200,
+      "description": "A historic luxury hotel located in the former French Concession, blending classic architecture with modern comfort.",
+      "image_url": "images/museum.jpg",
+      "location": "59 Maoming Rd (S), Huangpu, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "pearl_tower_dinner",
+      "name": "Dinner at Oriental Pearl Tower",
+      "category": "Food Tour",
+      "price_sek": 950,
+      "description": "Enjoy dinner with a panoramic view at the revolving restaurant inside Shanghai’s iconic Oriental Pearl Tower.",
+      "image_url": "images/museum.jpg",
+      "location": "1 Century Ave, Pudong, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "nanjing_east_night_walk",
+      "name": "Nanjing East Road Night Walk",
+      "category": "Walking Tour",
+      "price_sek": 300,
+      "description": "Explore the lively lights, shops, and street snacks of Nanjing East Road with a knowledgeable local guide.",
+      "image_url": "images/museum.jpg",
+      "location": "Nanjing East Rd, Huangpu, Shanghai",
+      "duration": "110",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_pudong_marriott",
+      "name": "Shanghai Pudong Marriott Hotel",
+      "category": "Hotel",
+      "price_sek": 1500,
+      "description": "Modern skyscraper hotel offering top-tier business amenities, skyline views, and convenient access to Lujiazui.",
+      "image_url": "images/museum.jpg",
+      "location": "99 Lujiazui Ring Rd, Pudong, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "chinese_new_year_festival",
+      "name": "Chinese New Year Festival",
+      "category": "Event",
+      "price_sek": 0,
+      "description": "Celebrate with fireworks, lanterns, and traditional performances throughout Shanghai during the Spring Festival.",
+      "image_url": "images/event-two.jpg",
+      "location": "Various locations, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "zhujiajiao_water_town",
+      "name": "Zhujiajiao Water Town Excursion",
+      "category": "Day Trip",
+      "price_sek": 600,
+      "description": "Take a relaxing boat ride and explore ancient bridges and alleyways in this historic water town near Shanghai.",
+      "image_url": "images/museum.jpg",
+      "location": "Zhujiajiao, Qingpu District, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_crafts_workshop",
+      "name": "Traditional Crafts Workshop",
+      "category": "Museum",
+      "price_sek": 320,
+      "description": "Participate in a hands-on experience crafting paper-cuttings, fans, or silk embroidery guided by local artisans.",
+      "image_url": "images/craft-one.jpg",
+      "location": "Xujiahui Rd, Huangpu, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_coffee_crawl",
+      "name": "Shanghai Coffee Crawl",
+      "category": "Food Tour",
+      "price_sek": 480,
+      "description": "Sample the city’s finest artisanal coffee across trendy neighborhoods with a knowledgeable caffeine connoisseur.",
+      "image_url": "images/WechatIMG787.jpg",
+      "location": "Jing'an District, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "swfc_observatory_night",
+      "name": "SWFC Observatory Night Entry",
+      "category": "Landmark",
+      "price_sek": 680,
+      "description": "Ascend to the top floors of Shanghai World Financial Center for an evening view of the dazzling skyline.",
+      "image_url": "images/skyline.jpeg",
+      "location": "100 Century Ave, Pudong, Shanghai",
+      "duration": "60",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "puli_hotel_spa",
+      "name": "The PuLi Hotel and Spa",
+      "category": "Hotel",
+      "price_sek": 2200,
+      "description": "Luxury urban resort blending contemporary design and serene spaces in the heart of Jing’an.",
+      "image_url": "images/museum.jpg",
+      "location": "1 Changde Rd, Jing’an, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_fashion_week",
+      "name": "Shanghai Fashion Week (Seasonal)",
+      "category": "Event",
+      "price_sek": 0,
+      "description": "Witness emerging designers and top fashion shows at venues across the city during this semi-annual event.",
+      "image_url": "images/fashion.jpg",
+      "location": "Various locations, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_tea_tasting",
+      "name": "Shanghai Tea Tasting Experience",
+      "category": "Food Tour",
+      "price_sek": 360,
+      "description": "Sample premium Chinese teas and learn traditional brewing techniques in a peaceful tea house setting.",
+      "image_url": "images/museum.jpg",
+      "location": "Tianzifang, Taikang Rd, Shanghai",
+      "duration": "90",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "ke_center_contemporary_art",
+      "name": "K11 Art Mall & KE Center",
+      "category": "Museum",
+      "price_sek": 160,
+      "description": "A fusion of shopping and contemporary art installations offering rotating exhibits from Chinese and international artists.",
+      "image_url": "images/.jpg",
+      "location": "300 Huaihai Middle Rd, Huangpu, Shanghai",
+      "duration": "90",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_hotpot_experience",
+      "name": "Authentic Hotpot Experience",
+      "category": "Food Tour",
+      "price_sek": 500,
+      "description": "Dine like a local with a traditional hotpot meal featuring a wide range of meats, vegetables, and dipping sauces.",
+      "image_url": "images/hotpot.jpg",
+      "location": "People's Square area, Huangpu, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "capella_shanghai",
+      "name": "Capella Shanghai Jian Ye Li",
+      "category": "Hotel",
+      "price_sek": 2600,
+      "description": "A boutique luxury hotel in a restored Shikumen compound, offering French-Asian fusion design and private courtyards.",
+      "image_url": "images/museum.jpg",
+      "location": "480 West Jianguo Rd, Xuhui, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "dragon_boat_festival_event",
+      "name": "Dragon Boat Festival",
+      "category": "Event",
+      "price_sek": 0,
+      "description": "Watch colorful dragon boat races and enjoy traditional sticky rice dumplings during this cultural summer celebration.",
+      "image_url": "images/dragonboat.jpg",
+      "location": "Suzhou Creek and other locations, Shanghai",
+      "duration": "200",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "qibao_old_street",
+      "name": "Qibao Old Street Food Tour",
+      "category": "Food Tour",
+      "price_sek": 420,
+      "description": "Stroll through the ancient Qibao Town while sampling local delicacies like stinky tofu, rice cakes, and candied fruits.",
+      "image_url": "images/food-four.jpg",
+      "location": "Qibao, Minhang District, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_auto_museum",
+      "name": "Shanghai Auto Museum",
+      "category": "Museum",
+      "price_sek": 240,
+      "description": "Explore the evolution of automobiles with over 100 classic cars and interactive exhibits in China’s first auto museum.",
+      "image_url": "images/museum-four.jpg",
+      "location": "7565 Boyuan Rd, Jiading, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "peace_hotel_shanghai",
+      "name": "Fairmont Peace Hotel",
+      "category": "Hotel",
+      "price_sek": 2300,
+      "description": "An iconic art-deco hotel overlooking the Bund, offering heritage suites, fine dining, and jazz evenings.",
+      "image_url": "images/museum.jpg",
+      "location": "20 Nanjing East Rd, Huangpu, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_lantern_festival",
+      "name": "Lantern Festival",
+      "category": "Event",
+      "price_sek": 0,
+      "description": "Celebrate the end of Chinese New Year with glowing lantern displays, riddles, and sweet tangyuan desserts.",
+      "image_url": "images/lantern.jpg",
+      "location": "Yuyuan Garden and city-wide, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "tianzifang_artist_quarters",
+      "name": "Tianzifang Artist Quarters",
+      "category": "Museum",
+      "price_sek": 0,
+      "description": "Wander through this artsy labyrinth of renovated alleyways filled with galleries, studios, shops, and cafes.",
+      "image_url": "images/museum.jpg",
+      "location": "Lane 210, Taikang Rd, Huangpu, Shanghai",
+      "duration": "120",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_night_food_bike",
+      "name": "Shanghai Night Food Tour by Bike",
+      "category": "Food Tour",
+      "price_sek": 880,
+      "description": "Cycle through local neighborhoods at night and taste a variety of Shanghai street foods with an expert guide.",
+      "image_url": "images/food-seven.jpg",
+      "location": "Starting point: Jing’an Temple, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "shanghai_museum_of_glass",
+      "name": "Shanghai Museum of Glass",
+      "category": "Museum",
+      "price_sek": 180,
+      "description": "An interactive museum showcasing artistic and scientific applications of glass with hands-on workshops.",
+      "image_url": "images/museum-five.jpg",
+      "location": "685 Changjiang West Rd, Baoshan, Shanghai",
+      "duration": "160",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "waldorf_astoria_bund",
+      "name": "Waldorf Astoria Shanghai on the Bund",
+      "category": "Hotel",
+      "price_sek": 2800,
+      "description": "Luxury accommodation in a neoclassical building with river views, fine dining, and old-world elegance.",
+      "image_url": "images/hotel-one.jpg",
+      "location": "2 Zhongshan East 1st Rd, Huangpu, Shanghai",
+      "duration": "-",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "mid_autumn_festival",
+      "name": "Mid-Autumn Festival",
+      "category": "Event",
+      "price_sek": 0,
+      "description": "Celebrate the harvest moon with lanterns, storytelling, and mooncakes shared among friends and family.",
+      "image_url": "images/event-one.jpg",
+      "location": "City-wide, Shanghai",
+      "duration": "180",
+      "carousel_images": [
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg",
+        "images/museum.jpg"
+      ]
+    },
+    {
+      "id": "contemporary_drama_theatre",
+      "name": "Contemporary Drama at Shanghai Grand Theatre",
+      "category": "Event",
+      "price_sek": 650,
+      "description": "Attend cutting-edge Chinese and international theater performances at the architecturally stunning Grand Theatre.",
+      "image_url": "images/theatre.jpg",
+      "location": "300 Renmin Ave, Huangpu, Shanghai",
+      "duration": "180",
       "carousel_images": [
         "images/museum.jpg",
         "images/museum.jpg",
