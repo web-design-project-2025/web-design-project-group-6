@@ -91,7 +91,7 @@
       "category": "Landmark",
       "price_sek": 700,
       "description": "Get panoramic views from China's tallest building at the Shanghai Tower’s observation deck.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/view.jpg",
       "location": "501 Yincheng Middle Rd, Lujiazui, Pudong, Shanghai",
       "duration": "60",
       "carousel_images": [
@@ -312,7 +312,7 @@
       "category": "Food Tour",
       "price_sek": 950,
       "description": "Enjoy dinner with a panoramic view at the revolving restaurant inside Shanghai’s iconic Oriental Pearl Tower.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/shanghai-food-five.jpeg",
       "location": "1 Century Ave, Pudong, Shanghai",
       "duration": "120",
       "carousel_images": [
