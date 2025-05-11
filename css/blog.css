@@ -479,8 +479,8 @@ body {
   flex-wrap: wrap;
   gap: 60px;
   margin-top: 60px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .blog-card {
@@ -489,7 +489,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 18px;
   height: auto;
-  width: 150px;
+  width: 200px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
@@ -500,7 +500,7 @@ body {
 
 .blog-card img {
   width: 100%;
-  height: 200px;
+  height: 210px;
   border-radius: 5px;
 }
 
