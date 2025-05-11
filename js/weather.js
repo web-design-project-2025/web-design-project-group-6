@@ -11,16 +11,18 @@ fetch(url)
 
     const weatherinformation = document.getElementById("weather-information");
     weatherinformation.innerHTML =
-      "<strong>Location:</strong> Shanghai<br>" +
-      "<strong>Temperature:</strong> " +
+      "<strong>📍 Shanghai</strong> &nbsp;|&nbsp; " +
+      "<strong>🌡 Temperature:</strong> " +
       data.current_weather.temperature +
-      "°C<br>" +
-      "<strong>Wind Speed: </strong>" +
+      "°C &nbsp;|&nbsp; " +
+      "<strong>💨 Wind:</strong> " +
       data.current_weather.windspeed +
-      " km/h<br>" +
-      "<strong>Wind Direction:</strong> " +
+      " km/h &nbsp;|&nbsp; " +
+      "<strong>🧭 Direction:</strong> " +
       data.current_weather.winddirection +
-      "°";
+      "° &nbsp;|&nbsp; " +
+      "<strong>☁️ Code:</strong> " +
+      data.current_weather.weathercode;
   })
 
   .catch((error) => {
