@@ -595,10 +595,21 @@ body {
   margin-bottom: 1rem;
 }
 
-.promo-text a {
-  color: #17689c;
+.promo a button {
+  color: #fff;
+  background-color: #17689c;
   text-decoration: none;
   font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promo a button:hover {
+  background-color: #12567e;
 }
 
 /* Section 5: Top Rated */
