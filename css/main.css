@@ -556,17 +556,21 @@ body {
 .category:hover {
   transform: scale(1.05);
 }
-
-.category:nth-child(1) {
-  background-image: url("../images/museum..jpg");
+.category-row a {
+  flex: 1;
+  text-decoration: none;
 }
-.category:nth-child(2) {
+
+.category-row a:nth-child(1) .category {
+  background-image: url("../images/museum.jpg");
+}
+.category-row a:nth-child(2) .category {
   background-image: url("../images/bistro.jpg");
 }
-.category:nth-child(3) {
+.category-row a:nth-child(3) .category {
   background-image: url("../images/fashion.jpg");
 }
-.category:nth-child(4) {
+.category-row a:nth-child(4) .category {
   background-image: url("../images/hotel.jpg");
 }
 

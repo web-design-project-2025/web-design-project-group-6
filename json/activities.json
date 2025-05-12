@@ -37,7 +37,7 @@
     {
       "id": "shanghai_foodie_tour",
       "name": "Shanghai Foodie Tour",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 850,
       "description": "Experience authentic local cuisine with guided tastings in hidden alleyways and bustling markets.",
       "image_url": "images/food-two.jpg",
@@ -54,7 +54,7 @@
     {
       "id": "culinary_backstreets_tour",
       "name": "Culinary Backstreets Tour",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 900,
       "description": "Explore Shanghai's hidden food gems with expert guides, sampling dishes at family-run eateries.",
       "image_url": "images/food-three.jpg",
@@ -71,7 +71,7 @@
     {
       "id": "shanghai_bund_cruise",
       "name": "Shanghai Bund Cruise",
-      "category": "Cruise",
+      "category": "Landmark",
       "price_sek": 600,
       "description": "Enjoy a scenic evening cruise along the Huangpu River, offering views of both historic and modern Shanghai.",
       "image_url": "images/shanghai-vie-sky.jpg",
@@ -105,7 +105,7 @@
     {
       "id": "yuyuan_garden",
       "name": "Yuyuan Garden",
-      "category": "Garden",
+      "category": "Landmark",
       "price_sek": 300,
       "description": "Stroll through a classical Chinese garden in the heart of the city, filled with pavilions, ponds, and rockeries.",
       "image_url": "images/garden-six.jpg",
@@ -122,7 +122,7 @@
     {
       "id": "jade_buddha_temple",
       "name": "Jade Buddha Temple",
-      "category": "Temple",
+      "category": "Landmark",
       "price_sek": 250,
       "description": "Visit a serene Buddhist temple housing two jade Buddha statues brought from Burma.",
       "image_url": "images/temple-one.jpg",
@@ -173,7 +173,7 @@
     {
       "id": "urban_planning_exhibition",
       "name": "Urban Planning Exhibition Center",
-      "category": "Exhibition",
+      "category": "Museum",
       "price_sek": 200,
       "description": "Learn about Shanghai's development through interactive exhibits and a large-scale city model.",
       "image_url": "images/museum.jpg",
@@ -207,7 +207,7 @@
     {
       "id": "shanghai_zoo",
       "name": "Shanghai Zoo",
-      "category": "Zoo",
+      "category": "Landmark",
       "price_sek": 350,
       "description": "Visit one of China's oldest zoos, home to diverse wildlife including pandas, big cats, and tropical birds.",
       "image_url": "images/zoo-one.jpg",
@@ -258,7 +258,7 @@
     {
       "id": "shanghai_brewery_tour",
       "name": "Shanghai Brewery Tour",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 550,
       "description": "Taste locally brewed craft beers and learn about Shanghai’s growing beer scene with expert guides.",
       "image_url": "images/craft-one.jpg",
@@ -275,7 +275,7 @@
     {
       "id": "shanghai_dim_sum_class",
       "name": "Shanghai Dim Sum Cooking Class",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 700,
       "description": "Learn to make authentic Chinese dumplings and dim sum in this hands-on culinary experience.",
       "image_url": "images/dim-one.jpg",
@@ -309,7 +309,7 @@
     {
       "id": "pearl_tower_dinner",
       "name": "Dinner at Oriental Pearl Tower",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 950,
       "description": "Enjoy dinner with a panoramic view at the revolving restaurant inside Shanghai’s iconic Oriental Pearl Tower.",
       "image_url": "images/shanghai-food-five.jpeg",
@@ -377,7 +377,7 @@
     {
       "id": "zhujiajiao_water_town",
       "name": "Zhujiajiao Water Town Excursion",
-      "category": "Day Trip",
+      "category": "Landmark",
       "price_sek": 600,
       "description": "Take a relaxing boat ride and explore ancient bridges and alleyways in this historic water town near Shanghai.",
       "image_url": "images/museum.jpg",
@@ -411,7 +411,7 @@
     {
       "id": "shanghai_coffee_crawl",
       "name": "Shanghai Coffee Crawl",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 480,
       "description": "Sample the city’s finest artisanal coffee across trendy neighborhoods with a knowledgeable caffeine connoisseur.",
       "image_url": "images/WechatIMG787.jpg",
@@ -479,10 +479,10 @@
     {
       "id": "shanghai_tea_tasting",
       "name": "Shanghai Tea Tasting Experience",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 360,
       "description": "Sample premium Chinese teas and learn traditional brewing techniques in a peaceful tea house setting.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/tea.jpg",
       "location": "Tianzifang, Taikang Rd, Shanghai",
       "duration": "90",
       "carousel_images": [
@@ -513,7 +513,7 @@
     {
       "id": "shanghai_hotpot_experience",
       "name": "Authentic Hotpot Experience",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 500,
       "description": "Dine like a local with a traditional hotpot meal featuring a wide range of meats, vegetables, and dipping sauces.",
       "image_url": "images/hotpot.jpg",
@@ -564,7 +564,7 @@
     {
       "id": "qibao_old_street",
       "name": "Qibao Old Street Food Tour",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 420,
       "description": "Stroll through the ancient Qibao Town while sampling local delicacies like stinky tofu, rice cakes, and candied fruits.",
       "image_url": "images/food-four.jpg",
@@ -649,7 +649,7 @@
     {
       "id": "shanghai_night_food_bike",
       "name": "Shanghai Night Food Tour by Bike",
-      "category": "Food Tour",
+      "category": "Food",
       "price_sek": 880,
       "description": "Cycle through local neighborhoods at night and taste a variety of Shanghai street foods with an expert guide.",
       "image_url": "images/food-seven.jpg",
