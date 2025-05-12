@@ -481,6 +481,7 @@ body {
   border-radius: 5px;
   color: white;
   font-size: 1rem;
+  font-weight: 450;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-left: 0;
@@ -601,9 +602,13 @@ body {
   text-decoration: none;
   font-weight: 450;
   border: 2px solid #17689c;
-  padding: 0.25rem 0.8rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  transform: translateY(0);
+  position: relative;
+  z-index: 1;
 }
 
 .promo-text a:hover {
@@ -747,12 +752,7 @@ body {
   background-color: #17689c;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.book-btn:hover {
-  background-color: #12567e;
+  border-radius: 5px;
 }
 
 #showMoreBtn {
@@ -826,6 +826,7 @@ body {
   overflow: hidden;
   height: 100%;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .event-card-img {
@@ -845,16 +846,23 @@ body {
   transform: scale(1.05);
 }
 
+.event-card:hover .event-category {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
 .event-category {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 12px;
   font-weight: 500;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .event-info {
@@ -946,6 +954,24 @@ body {
     margin-top: 5px;
     gap: 10px;
   }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .category-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .category {
+    height: 12rem;
+    font-size: 1.2rem;
+  }
+  
   .promo {
     display: block;
     padding: 0;
@@ -955,9 +981,14 @@ body {
 
   .promo-img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 3rem;
+    padding: 15px;
   }
 
+  .promo-text {
+    text-align: center;
+    padding: 15px 0;
+  }
   .promo-text h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -965,10 +996,11 @@ body {
   }
 
   .promo-text a {
-    text-decoration: none;
-    font-weight: bold;
     padding: 10px;
+    margin: 0 auto;
+    display: inline-block;
   }
+
   .events {
     grid-template-columns: 1fr;
   }

@@ -460,19 +460,15 @@ body {
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 30%;
-  color: white;
+  top: 20%;
+  color: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
 }
 
 .contact-text h1 {
   font-size: 45px;
   margin-bottom: 5px;
-  font-weight: 500;
-}
-
-.contact-text p {
-  font-size: 25px;
+  font-weight: 450;
 }
 
 .contact-container {
