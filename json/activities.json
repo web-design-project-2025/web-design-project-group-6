@@ -176,7 +176,7 @@
       "category": "Museum",
       "price_sek": 200,
       "description": "Learn about Shanghai's development through interactive exhibits and a large-scale city model.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/urban.jpg",
       "location": "100 People's Ave, Huangpu, Shanghai",
       "duration": "150",
       "carousel_images": [
@@ -193,7 +193,7 @@
       "category": "Entertainment",
       "price_sek": 800,
       "description": "Enjoy a spectacular acrobatic performance showcasing Chinese culture, music, and daring stunts.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/circus.jpg",
       "location": "2266 Gonghexin Rd, Jing'an, Shanghai",
       "duration": "120",
       "carousel_images": [
@@ -227,7 +227,7 @@
       "category": "Museum",
       "price_sek": 200,
       "description": "China’s first state-run contemporary art museum, located in a former power plant, showcasing innovative art exhibitions.",
-      "image_url": "images/museum.jpg",
+      "image_url": "images/power.jpg",
       "location": "200 Huayuangang Rd, Huangpu, Shanghai",
       "duration": "120",
       "carousel_images": [
@@ -499,7 +499,7 @@
       "category": "Museum",
       "price_sek": 160,
       "description": "A fusion of shopping and contemporary art installations offering rotating exhibits from Chinese and international artists.",
-      "image_url": "images/.jpg",
+      "image_url": "images/art-two.jpg",
       "location": "300 Huaihai Middle Rd, Huangpu, Shanghai",
       "duration": "90",
       "carousel_images": [

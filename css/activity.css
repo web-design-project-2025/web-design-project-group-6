@@ -1,9 +1,8 @@
 .reviews {
   max-width: 1200px;
   margin: 50px auto;
-  padding: 30px 20px;
+  padding: 20px;
   background: white;
-  padding-bottom: 80px;
 }
 
 .reviews h2 {
