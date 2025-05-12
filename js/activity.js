@@ -38,3 +38,61 @@ fetch("json/activities.json")
     console.error("Error loading activity:", error);
     document.body.innerHTML = "<h2>Error loading activity.</h2>";
   });
+
+/* Recommendations function */
+// Helper function to shuffle an array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// Create tile using same logic for consistency
+function createRecommendationTile(activity) {
+  var tile = document.createElement("div");
+  tile.className = "activity-tile";
+
+  tile.innerHTML =
+    '<img src="' +
+    activity.image_url +
+    '" alt="' +
+    activity.name +
+    '" />' +
+    "<h3>" +
+    activity.name +
+    "</h3>" +
+    "<p>" +
+    activity.price_sek +
+    " SEK</p>" +
+    '<a href="activity.html?id=' +
+    activity.id +
+    '" class="book-btn">Book</a>';
+
+  return tile;
+}
+
+function renderRecommendations(activities) {
+  var container = document.getElementById("recommendationsGrid");
+  container.innerHTML = ""; // Clear previous content
+
+  shuffleArray(activities); // Shuffle activities
+
+  const randomFour = activities.slice(0, 4);
+  randomFour.forEach(function (activity) {
+    var tile = createRecommendationTile(activity);
+    container.appendChild(tile);
+  });
+}
+
+// Fetch and display recommendations
+fetch("json/activities.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    renderRecommendations(data.activities);
+  })
+  .catch(function (error) {
+    console.error("Failed to load recommended activities:", error);
+  });

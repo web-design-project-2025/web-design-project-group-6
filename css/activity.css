@@ -66,3 +66,11 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+
+/*Recommended section*/
+.recommended-wrapper h2 {
+  font-size: 30px;
+  font-weight: 450;
+  margin-bottom: 30px;
+  text-align: center;
+}
