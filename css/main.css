@@ -556,17 +556,21 @@ body {
 .category:hover {
   transform: scale(1.05);
 }
-
-.category:nth-child(1) {
-  background-image: url("../images/museum..jpg");
+.category-row a {
+  flex: 1;
+  text-decoration: none;
 }
-.category:nth-child(2) {
+
+.category-row a:nth-child(1) .category {
+  background-image: url("../images/museum.jpg");
+}
+.category-row a:nth-child(2) .category {
   background-image: url("../images/bistro.jpg");
 }
-.category:nth-child(3) {
+.category-row a:nth-child(3) .category {
   background-image: url("../images/fashion.jpg");
 }
-.category:nth-child(4) {
+.category-row a:nth-child(4) .category {
   background-image: url("../images/hotel.jpg");
 }
 
@@ -579,10 +583,13 @@ body {
 }
 
 .promo-img {
-  width: 30rem;
+  width: 50svw;
   border-radius: 1rem;
 }
 
+.promo-text {
+  width: 50vw;
+}
 .promo-text h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -741,9 +748,15 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #12567e;
 }
 
 #showMoreBtn {
+  width: 118px;
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
@@ -752,9 +765,17 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showMoreBtn:hover {
+  background-color: #12567e;
 }
 
 #showLessBtn {
+  width: 118px;
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
@@ -763,6 +784,13 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showLessBtn:hover {
+  background-color: #12567e;
 }
 
 /*EVENTS*/

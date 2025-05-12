@@ -1,9 +1,8 @@
 .reviews {
   max-width: 1200px;
   margin: 50px auto;
-  padding: 30px 20px;
+  padding: 20px;
   background: white;
-  padding-bottom: 80px;
 }
 
 .reviews h2 {
@@ -65,4 +64,12 @@
   font-size: 14px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+/*Recommended section*/
+.recommended-wrapper h2 {
+  font-size: 30px;
+  font-weight: 450;
+  margin-bottom: 30px;
+  text-align: center;
 }

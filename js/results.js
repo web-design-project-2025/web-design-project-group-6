@@ -2,8 +2,11 @@
 /* idea learned from https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
 var urlParams = new URLSearchParams(window.location.search);
 var queryParam = urlParams.get("query");
+/*Added this to also filter based on the home page shortcuts*/
+var categoryParam = urlParams.get("category");
 /*this was needed to avoid errors from using upper and lower cases, so everything is converrted to lowercase or left empty - "" */
 var query = queryParam ? queryParam.toLowerCase() : "";
+var category = categoryParam ? categoryParam.toLowerCase() : "";
 
 /* this gets the place defined in html (resultsGrid) where I want to place the tiles with activities*/
 var grid = document.getElementById("resultsGrid");
@@ -89,7 +92,10 @@ fetch("json/activities.json")
   /*filter idea from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter */
   .then(function (data) {
     filtered = data.activities.filter(function (activity) {
-      return activity.name.toLowerCase().indexOf(query) !== -1;
+      var nameMatch = activity.name.toLowerCase().indexOf(query) !== -1;
+      var categoryMatch = activity.category.toLowerCase() === category;
+
+      return (query && nameMatch) || (category && categoryMatch);
     });
     renderTiles();
   })
