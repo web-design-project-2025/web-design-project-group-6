@@ -583,12 +583,12 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 70px;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .promo-img {
-  width: 50svw;
+  max-width: 40vw;
   border-radius: 1rem;
 }
 
@@ -629,6 +629,8 @@ body {
 
 .top-rated h2 {
   font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
 .top-rated-gallery {
@@ -640,7 +642,16 @@ body {
   padding: 0;
 }
 
-.activity img {
+.activitytop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.activitytop img {
   width: 100%;
   border-radius: 0.5rem;
   display: block;
@@ -648,49 +659,10 @@ body {
   object-fit: cover;
 }
 
-.activity {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  min-width: 200px;
-  max-width: 300px;
-}
-
-.activity p {
+.activitytop p {
   margin-top: 1rem;
   text-align: center;
-  font-weight: bold;
-}
-
-.small {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.medium {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.large {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 500;
 }
 
 /* Section 6: Last Minute */
@@ -926,7 +898,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding: 25px;
   margin-bottom: 30px;
   margin-left: 100px;
   margin-right: 100px;
@@ -990,7 +961,7 @@ body {
   }
 
   .promo-img {
-    width: 100%;
+    width: 5vw;
     border-radius: 3rem;
     padding: 15px;
   }
@@ -1082,7 +1053,7 @@ body {
   }
 }
 
-/*Food gallery section*/
+/*Food carousel section*/
 
 .food-gallery {
   padding: 0;
@@ -1123,7 +1094,7 @@ body {
 
 .gallery-item p {
   margin-top: 0.5rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .gallery-nav {
