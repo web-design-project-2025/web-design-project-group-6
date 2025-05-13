@@ -440,21 +440,20 @@ body {
   position: relative;
 }
 
-.part1 img {
+.part1 video {
   width: 100%;
-  height: 550px;
+  height: 500px;
   object-fit: cover;
   display: block;
 }
 
 .part1 p {
-  font-style: italic;
   position: absolute;
   text-align: left;
   bottom: 20px;
   left: 20px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .about-container1 {
@@ -478,20 +477,18 @@ body {
   width: 450px;
   height: auto;
   padding: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
   border-radius: 8px;
 }
 
 .about-text2 h1 {
   color: #17689c;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 30px;
 }
 
 .about-text2 p {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .about-container2 {
@@ -501,15 +498,18 @@ body {
   align-items: center;
   margin-top: 100px;
 }
+
 .container2-title {
   position: absolute;
   top: -100px;
   color: #17689c;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 30px;
   z-index: 1;
   text-align: center;
+  margin-top: 50px;;
 }
+
 .about-img3 {
   width: 100%;
   height: 250px;
@@ -535,7 +535,6 @@ body {
   height: 180px;
   background-color: rgba(255, 255, 255, 0.806);
   text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -554,7 +553,7 @@ body {
 
 .box-item h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 450;
   margin: 10px 0 5px;
   color: black;
 }
@@ -581,20 +580,19 @@ body {
   width: 500px;
   height: auto;
   padding: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   margin-top: 50px;
 }
 
 .about-text3 h1 {
   color: #17689c;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 30px;
 }
 
 .about-text3 p {
   color: black;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .about-container4 {
@@ -608,14 +606,14 @@ body {
   position: absolute;
   top: 70px;
   color: white;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 450;
+  font-size: 25px;
   z-index: 1;
   text-align: center;
 }
 .about-img5 {
   width: 100%;
-  height: 180px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
   opacity: 0.8;
