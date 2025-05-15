@@ -601,7 +601,7 @@ body {
 }
 
 .promo-img {
-  max-width: 40vw;
+  width: 30rem;
   border-radius: 1rem;
 }
 
@@ -692,19 +692,18 @@ body {
 
 .btn-transparent {
   background-color: transparent;
-  color: white;
+  color: white; 
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   border: 2px solid #fff;
   border-radius: 0.5rem;
   margin-top: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-transparent:hover {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
 }
 /*RESULTS PAGE*/
 .results-container {
@@ -969,15 +968,15 @@ body {
   }
 
   .promo-img {
-    width: 5vw;
-    border-radius: 3rem;
-    padding: 15px;
+    width: 100%;
+    border-radius: 1rem;
   }
 
   .promo-text {
     text-align: center;
     padding: 15px 0;
   }
+  
   .promo-text h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -985,6 +984,7 @@ body {
   }
 
   .promo-text a {
+    text-decoration: none;
     padding: 10px;
     margin: 0 auto;
     display: inline-block;
