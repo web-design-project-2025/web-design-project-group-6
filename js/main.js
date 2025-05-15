@@ -1,3 +1,4 @@
+//This function helps with the serach bar input registration
 document.getElementById("searchButton").addEventListener("click", function () {
   var queryInput = document.getElementById("searchInput");
 
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//autofill feature
+//autofill feature for search bar
 
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("searchInput");
@@ -114,8 +115,8 @@ searchInput.addEventListener("keydown", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the necessary elements
   var track = document.querySelector(".gallery-track");
-  var prevButton = document.querySelector(".gallery-nav.prev");
-  var nextButton = document.querySelector(".gallery-nav.next");
+  var prevButton = document.querySelector(".carousel-prev");
+  var nextButton = document.querySelector(".carousel-next");
 
   // Set the starting index of visible items
   var currentIndex = 0;

@@ -81,8 +81,8 @@
           <a href="blog.html"><button>Start Exploring</button></a>
         </div>
       </section>
-      <!-- Section 2: weather box -->
 
+      <!-- Section 2: Weather box -->
       <section>
         <div class="weather-box fade">
           <h2>Weather in Shanghai</h2>
@@ -97,7 +97,7 @@
 
       <!-- Section 3: Activity Shortcuts -->
       <section class="shortcuts fade">
-        <h2>Discover the city in different style</h2>
+        <h2 class="section-header">Discover the city in different style</h2>
         <div class="category-row">
           <a href="results.html?category=Museum">
             <div class="category" data-category="Museums">Museums</div>
@@ -114,45 +114,46 @@
         </div>
       </section>
 
-      <!-- Section 4: Food -->
+      <!-- Section 4: Food Carousel Gallery-->
 
       <section class="food-gallery fade">
-        <h2 class="food-gallery-title">
+        <h2 class="section-header">
           Tickle your taste buds with culinary specialities of Shanghai
         </h2>
         <div class="gallery-container fade">
           <div class="gallery-track">
             <div class="gallery-item">
               <img src="images/shanghai-food-one.jpeg" alt="Food 1" />
-              <p><strong>Japanese Ramen</strong></p>
+              <p>Japanese Ramen</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-two.jpeg" alt="Food 2" />
-              <p><strong>Shibuya Beef Rice Bowl</strong></p>
+              <p>Shibuya Beef Rice Bowl</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-three.jpeg" alt="Food 3" />
-              <p><strong>Caramel Pudding</strong></p>
+              <p>Caramel Pudding</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-four.jpeg" alt="Food 4" />
-              <p><strong>Tea Rice</strong></p>
+              <p>Tea Rice</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-five.jpeg" alt="Food 5" />
-              <p><strong>Soft-boiled preserved egg</strong></p>
+              <p>Soft-boiled preserved egg</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-six.jpeg" alt="Food 6" />
-              <p><strong>Earth Milkshake</strong></p>
+              <p>Earth Milkshake</p>
             </div>
             <div class="gallery-item">
               <img src="images/shanghai-food-seven.jpeg" alt="Food 7" />
-              <p><strong>Cheese Pasta</strong></p>
+              <p>Cheese Pasta</p>
             </div>
           </div>
-          <button class="gallery-nav prev">&#10094;</button>
-          <button class="gallery-nav next">&#10095;</button>
+          <!-- &#10094 and &#10095 are codes for the left and right arrow symbols -->
+          <button class="carousel-prev gallery-nav">&#10094;</button>
+          <button class="carousel-next gallery-nav">&#10095;</button>
         </div>
       </section>
 
@@ -169,124 +170,126 @@
 
       <!-- Section 6: Top Rated -->
       <section class="top-rated fade">
-        <h2>Top Rated</h2>
+        <h2 class="section-header">Top Rated</h2>
         <div class="top-rated-gallery">
           <!-- These would be loaded dynamically, using placeholders for now -->
-          <div class="activity small">
+          <div class="activitytop">
             <img src="images/no.1.png" alt="Activity 1" />
             <p>Oriental Pearl Tower</p>
           </div>
-          <div class="activity medium">
+          <div class="activitytop">
             <img src="images/no.2.png" alt="Activity 2" />
             <p>Lujiazui</p>
           </div>
-          <div class="activity medium">
+          <div class="activitytop">
             <img src="images/no.3.png" alt="Activity 3" />
             <p>Town God's Temple</p>
           </div>
-          <div class="activity small">
+          <div class="activitytop">
             <img src="images/no.4.png" alt="Activity 4" />
-            <p>Shanghai Disne Land</p>
+            <p>Shanghai Disney Land</p>
           </div>
         </div>
       </section>
 
       <!-- Section 7: Events -->
       <section class="event-hero fade">
-        <h1>Latest events in Shanghai</h1>
-      </section>
-
-      <section class="events fade">
-        <div class="event-cards">
-          <div class="event-card">
-            <div class="event-card-img">
-              <img src="images/fashionweek.jpg" alt="Event1" />
-              <span class="event-category">Fashion</span>
-            </div>
-            <div class="event-info">
-              <h3>Shanghai Fashion Week</h3>
-            </div>
-            <div class="date">
-              <span>March 25</span>
-            </div>
-            <div class="location">
-              <img src="images/location.png" alt="Location" />
-              <span>Shanghai Xintaindi</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="event-cards">
-          <div class="event-card">
-            <div class="event-card-img">
-              <img src="images/coffeefestival.jpg" alt="Event2" />
-              <span class="event-category">Coffee</span>
-            </div>
-            <div class="event-info">
-              <h3>Shanghai Coffee Festival</h3>
-            </div>
-            <div class="date">
-              <span>April 7</span>
-            </div>
-            <div class="location">
-              <img src="images/location.png" alt="Location" />
-              <span>Shanghai Jing'an</span>
+        <h1 class="section-header">Latest events in Shanghai</h1>
+        <section class="events fade">
+          <div class="event-cards">
+            <div class="event-card">
+              <div class="event-card-img">
+                <img src="images/fashionweek.jpg" alt="Event1" />
+                <span class="event-category">Fashion</span>
+              </div>
+              <div class="event-info">
+                <h3>Shanghai Fashion Week</h3>
+              </div>
+              <div class="date">
+                <span>March 25</span>
+              </div>
+              <div class="location">
+                <img src="images/location.png" alt="Location" />
+                <span>Shanghai Xintaindi</span>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="event-cards">
-          <div class="event-card">
-            <div class="event-card-img">
-              <img src="images/maginman.jpg" alt="Event 3" />
-              <span class="event-category">Concert</span>
-            </div>
-            <div class="event-info">
-              <h3>MAGIC MAN2 WORLD TOUR</h3>
-            </div>
-            <div class="date">
-              <span>May 9</span>
-            </div>
-            <div class="location">
-              <img src="images/location.png" alt="Location" />
-              <span>Mercedes-Benz Arena</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="event-cards">
-          <div class="event-card">
-            <div class="event-card-img">
-              <img src="images/shanghaishenhua.jpg" alt="Event4" />
-              <span class="event-category">Sports</span>
-            </div>
-            <div class="event-info">
-              <h3>China CFA Super League</h3>
-            </div>
-            <div class="date">
-              <span>May 10</span>
-            </div>
-            <div class="location">
-              <img src="images/location.png" alt="Location" />
-              <span>Shanghai Stadium</span>
+          <div class="event-cards">
+            <div class="event-card">
+              <div class="event-card-img">
+                <img src="images/coffeefestival.jpg" alt="Event2" />
+                <span class="event-category">Coffee</span>
+              </div>
+              <div class="event-info">
+                <h3>Shanghai Coffee Festival</h3>
+              </div>
+              <div class="date">
+                <span>April 7</span>
+              </div>
+              <div class="location">
+                <img src="images/location.png" alt="Location" />
+                <span>Shanghai Jing'an</span>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="event-cards">
+            <div class="event-card">
+              <div class="event-card-img">
+                <img src="images/maginman.jpg" alt="Event 3" />
+                <span class="event-category">Concert</span>
+              </div>
+              <div class="event-info">
+                <h3>MAGIC MAN2 WORLD TOUR</h3>
+              </div>
+              <div class="date">
+                <span>May 9</span>
+              </div>
+              <div class="location">
+                <img src="images/location.png" alt="Location" />
+                <span>Mercedes-Benz Arena</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-cards">
+            <div class="event-card">
+              <div class="event-card-img">
+                <img src="images/shanghaishenhua.jpg" alt="Event4" />
+                <span class="event-category">Sports</span>
+              </div>
+              <div class="event-info">
+                <h3>China CFA Super League</h3>
+              </div>
+              <div class="date">
+                <span>May 10</span>
+              </div>
+              <div class="location">
+                <img src="images/location.png" alt="Location" />
+                <span>Shanghai Stadium</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- Section 8: Ig gallery -->
-      <section class="gallery fade">
-        <div class="card">
-          <img src="images/Instagram post - 1.png" alt="Post 1" />
-        </div>
-        <div class="card">
-          <img src="images/Instagram post - 2.png" alt="Post 2" />
-        </div>
-        <div class="card">
-          <img src="images/Instagram post - 3.png" alt="Post 3" />
-        </div>
-        <div class="card">
-          <img src="images/Instagram post - 4.png" alt="Post 4" />
+      <section class="insta-section fade">
+        <h2 class="section-header">
+          Check out the most Instagrammable places in Shanghai
+        </h2>
+        <div class="instacards">
+          <div class="card">
+            <img src="images/Instagram post - 1.png" alt="Post 1" />
+          </div>
+          <div class="card">
+            <img src="images/Instagram post - 2.png" alt="Post 2" />
+          </div>
+          <div class="card">
+            <img src="images/Instagram post - 3.png" alt="Post 3" />
+          </div>
+          <div class="card">
+            <img src="images/Instagram post - 2.png" alt="Post 4" />
+          </div>
         </div>
       </section>
 
