@@ -114,9 +114,9 @@ searchInput.addEventListener("keydown", function (e) {
 // food gallery carousel logic
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the necessary elements
-  var track = document.querySelector(".carousel-track");
-  var prevButton = document.querySelector(".carousel.prev");
-  var nextButton = document.querySelector(".carousel.next");
+  var track = document.querySelector(".gallery-track");
+  var prevButton = document.querySelector(".carousel-prev");
+  var nextButton = document.querySelector(".carousel-next");
 
   // Set the starting index of visible items
   var currentIndex = 0;
