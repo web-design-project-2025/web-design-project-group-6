@@ -1056,7 +1056,7 @@ body {
     min-width: 0;
   }
   .card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -1113,11 +1113,11 @@ body {
   border-radius: 50%;
 }
 
-carousel.prev {
+carousel-prev {
   left: 10px;
 }
 
-carousel.next {
+carousel-next {
   right: 10px;
 }
 
