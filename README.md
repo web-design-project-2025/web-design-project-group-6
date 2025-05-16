@@ -33,13 +33,17 @@ Optimized for desktop, tablet, and mobile devices.
 ## Technologies Used
 
 HTML-Structure and content markup
+
 CSS-Styling and layout
+
 JavaScript-Interactivity and dynamic features
+
 OpenWeatherMap API-For displaying real-time weather
 
 ## How to Run Locally
 
-Clone the repository:
+Clone the repository:https://github.com/web-design-project-2025/web-design-project-group-6.git
+
 Navigate to the project folder:https://web-design-project-2025.github.io/web-design-project-group-6/
 
 ## Main Pages & Navigation
