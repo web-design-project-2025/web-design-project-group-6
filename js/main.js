@@ -111,7 +111,7 @@ searchInput.addEventListener("keydown", function (e) {
   }
 });
 
-// Food gallery carousel logic - inspired by: https://www.youtube.com/watch?v=9HcxHDS2w1s and https://www.youtube.com/watch?v=749ta0nvj8s
+// Food gallery carousel logic - inspired by: https://www.youtube.com/watch?v=9HcxHDS2w1s and https://www.youtube.com/watch?v=VYsVOamdB0g
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the necessary elements
   var track = document.querySelector(".gallery-track");
