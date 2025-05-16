@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let suggestions = [];
 
   // Fetch JSON data from the autofill folder
-  fetch("../json/autofill.json")
+  fetch("json/autofill.json")
     .then((response) => response.json())
     .then((data) => {
       suggestions = data;
