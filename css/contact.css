@@ -498,6 +498,7 @@ body {
   margin-bottom: 20px;
   font-size: 20px;
   color: #17689c;
+  font-weight: 500;
 }
 
 .contact-container-text p {
@@ -511,6 +512,7 @@ body {
   font-size: 20px;
   color: #17689c;
   text-align: center;
+  font-weight: 500;
 }
 
 .contact-form form input,
@@ -530,18 +532,19 @@ body {
 .contact-form form button {
   width: 100%;
   padding: 12px;
-  background-color: #17689c;
-  color: white;
-  border: none;
+  background-color: white;
+  color: #17689c;
+  border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 20px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form form button:hover {
-  background-color: white;
-  color: #61648a;
+  background-color: #17689c;
+  border: none;
+  color: white;
 }
 
 @media (max-width: 768px) {
