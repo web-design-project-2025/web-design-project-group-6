@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
+  color: #000;
   background-color: #f9f9f9;
 }
 
@@ -94,15 +94,6 @@ header {
 
 .en {
   margin-left: -8px;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex: 1;
-  justify-content: flex-end;
-  padding-right: 10px;
 }
 
 .right a {
@@ -584,7 +575,67 @@ body {
   background-image: url("../images/hotel.jpg");
 }
 
-/* Section 4: Promo */
+/*Section 3: Food carousel section*/
+
+.food-gallery {
+  padding: 0;
+  margin-top: 70px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.gallery-item {
+  flex: 0 0 22%; /* Show 4 items at a time */
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Section 5: Promo */
 .promo {
   display: flex;
   margin-left: 100px;
@@ -699,82 +750,6 @@ body {
 .btn-transparent:hover {
   transform: translateY(-3px);
 }
-/*RESULTS PAGE*/
-.results-container {
-  max-width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 5vh;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-.activity-tile {
-  border: 1px solid #ccc;
-  padding: 15px;
-  text-align: center;
-  background: #fff;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.activity-tile img {
-  width: 30vh;
-  height: 20vh;
-  object-fit: cover;
-}
-
-.book-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#showMoreBtn {
-  width: 118px;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-#showMoreBtn:hover {
-  background-color: #12567e;
-}
-
-#showLessBtn {
-  width: 118px;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-#showLessBtn:hover {
-  background-color: #12567e;
-}
 
 /*EVENTS*/
 .event-hero {
@@ -785,7 +760,7 @@ body {
 .events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 1rem;
   padding: 0 2rem;
   max-width: 1200px;
   margin-left: auto;
@@ -899,8 +874,8 @@ body {
 }
 
 .instacards {
-  display: flex !important;
-  gap: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .card img {
@@ -909,7 +884,85 @@ body {
   display: block;
 }
 
+/*RESULTS PAGE*/
+.results-container {
+  max-width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.activity-tile {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.activity-tile img {
+  width: 30vh;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#showMoreBtn {
+  width: 118px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showMoreBtn:hover {
+  background-color: #12567e;
+}
+
+#showLessBtn {
+  width: 118px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showLessBtn:hover {
+  background-color: #12567e;
+}
+
 @media (max-width: 768px) {
+  /*HEADER TABLET*/
   .nav-container {
     flex-direction: column;
     padding: 15px;
@@ -937,12 +990,28 @@ body {
     gap: 10px;
   }
 
+  /*MAIN TABLET*/
+
+  .section-header {
+    font-size: 3vw;
+    margin-bottom: 15px;
+  }
+
+  /*HERO TABLET*/
+
+  .hero {
+    max-height: 40vh;
+  }
   .hero-content h1 {
     font-size: 2rem;
   }
   .hero-content p {
     font-size: 1rem;
+    max-width: 50vw;
   }
+
+  /*SHORTCUTS TABLET*/
+
   .category-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -954,25 +1023,32 @@ body {
     font-size: 1.2rem;
   }
 
+  /*PROMO TABLET*/
+
   .promo {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
-    gap: 2rem;
+    gap: 0.5rem;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .promo-img {
-    width: 100%;
+    max-width: 70vw;
     border-radius: 1rem;
+    padding: 0;
   }
+
 
   .promo-text {
     text-align: center;
-    padding: 15px 0;
+    padding: 0;
   }
   
   .promo-text h3 {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     margin-bottom: 1rem;
     padding: 10px;
   }
@@ -984,8 +1060,15 @@ body {
     display: inline-block;
   }
 
+  /*EVENTS TABLET*/
+
+  .event-hero {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   .events {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
   .event-cards {
     max-width: 350px;
@@ -995,16 +1078,42 @@ body {
     height: 400px;
     object-fit: cover;
   }
+  .event-info {
+    padding-left: 0;
+  }
+  .date {
+    padding-left: 0;
+  }
+  .location {
+    padding-left: 0;
+  }
+
+  /*FOOTER TABLET*/
+
   .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
   }
 
   .footer-links div:last-child {
-    grid-column: span 2;
+    grid-column: span 1;
     text-align: center;
+    align-items: center;
+  }
+
+  .footer-links div {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links div a {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .footer-bottom {
@@ -1037,91 +1146,319 @@ body {
     margin: 10px 0;
     flex: none;
   }
+
+  /*INSTAGRAM TABLET*/
+
   .instacards {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
     justify-content: center;
   }
-  .card {
-    flex: 1;
-    min-width: 0;
-  }
+
   .card img {
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block;
   }
+
+  /*TOP RATED TABLET*/
+
   .top-rated-gallery {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
-}
 
-/*Food carousel section*/
-
-.food-gallery {
-  padding: 0;
-  margin-top: 70px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.gallery-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.gallery-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 1rem;
-}
-
-.gallery-item {
-  flex: 0 0 22%; /* Show 4 items at a time */
-  text-align: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-.gallery-item p {
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-.gallery-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-
-@media (max-width: 768px) {
   .gallery-item {
     flex: 0 0 45%;
   }
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .hero {
+
+  /*INSTA TABLET*/
+  .instacards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /*LAST MINUTE TABLET*/
+  .last-minute {
     max-height: 40vh;
+  }
+}
+
+@media (max-width: 480px) {
+  /*HEADER  PHONE*/
+  .nav-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .middle {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .middle a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  /*MAIN PHONE*/
+
+  .section-header {
+    font-size: 5vw;
+    margin-bottom: 15px;
+  }
+
+  /*HERO PHONE*/
+
+  .hero {
+    max-height: 50vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 90vw;
+  }
+
+  /*SHORTCUTS PHONE*/
+
+  .shortcuts {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .category-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .category {
+    height: 12rem;
+    font-size: 1.2rem;
+  }
+
+  /*FOOD PHONE*/
+
+  .gallery-item p {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  /*PROMO PHONE*/
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .promo-img {
+    max-width: 100%;
+    border-radius: 1rem;
+    padding: 0;
+  }
+
+  .promo-text {
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .promo-text h3 {
+    font-size: 3.8vw;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+
+  .promo-text a {
+    padding: 10px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  /*EVENTS TABLET*/
+
+  .event-hero {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .events {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .event-cards {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .event-card-img img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .event-info {
+    padding-left: 0;
+  }
+  .date {
+    padding-left: 0;
+  }
+  .location {
+    padding-left: 0;
+  }
+
+  /*RESULTS PAGE PHONE*/
+  .results-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    max-width: 100vw;
+  }
+
+  .activity-tile {
+    padding: 10px;
+  }
+
+  .activity-tile img {
+    width: 70vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /*FOOTER PHONE*/
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links div:last-child {
+    grid-column: span 1;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links div {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links div a {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 40px auto 0;
+  }
+
+  .footer-bottom .logo {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px;
+    flex: none;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    flex: none;
+  }
+
+  footer .lan-container {
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    flex: none;
+  }
+  /*INSTAGRAM TABLET*/
+
+  .insta-section {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .instacards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /*TOP RATED TABLET*/
+
+  .top-rated {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .top-rated-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .activitytop p {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+  }
+  /*INSTA TABLET*/
+  .instacards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /*LAST MINUTE PHONE*/
+  .last-minute {
+    max-height: 30vh;
   }
 }

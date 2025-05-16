@@ -34,6 +34,7 @@
   max-width: 100vw;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -101,8 +102,9 @@
 }
 
 .reviews {
-  max-width: 1200px;
-  margin: 50px auto;
+  max-width: 100vw;
+  margin-right: 100px;
+  margin-left: 100px;
   padding: 20px;
   background: white;
 }
@@ -169,9 +171,250 @@
 }
 
 /*Recommended section*/
+.recommended-wrapper {
+  margin-bottom: 30px;
+}
 .recommended-wrapper h2 {
   font-size: 30px;
   font-weight: 450;
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  /*HERO TABLET*/
+
+  .activity-hero {
+    max-height: 40vh;
+  }
+  .hero-text h1 {
+    font-size: 4vw;
+  }
+
+  .hero-text p {
+    font-size: 3.5vw;
+  }
+
+  /*ABOUT AND CAROUSEL TABLET*/
+
+  .activity-main {
+    max-width: 100vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .activity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .text-info {
+    background-color: #f5f0e6;
+    padding: 2rem;
+    flex: 1;
+    border-radius: 10px;
+  }
+
+  .text-info h2 {
+    font-size: 4vh;
+    padding-bottom: 1vh;
+  }
+
+  .text-info h3 {
+    font-size: 2.5vh;
+    padding-bottom: 1vh;
+  }
+
+  .text-info p {
+    font-size: 2vh;
+    padding-bottom: 1.5vh;
+  }
+
+  .carousel {
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+  }
+
+  .carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /*REVIEWS TABLET*/
+  .reviews {
+    max-width: 100vw;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    background: white;
+  }
+
+  .reviews h2 {
+    font-size: 30px;
+    font-weight: 450;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*HERO PHONE*/
+  .activity-hero {
+    max-height: 30vh;
+  }
+  .hero-text h1 {
+    font-size: 6vw;
+  }
+
+  .hero-text p {
+    font-size: 4vw;
+  }
+
+  /*ABOUT AND CAROUSEL TABLET*/
+
+  .activity-main {
+    max-width: 100vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .activity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .text-info {
+    background-color: #f5f0e6;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 10px;
+  }
+
+  .text-info h2 {
+    font-size: 5vw;
+    padding-bottom: 1vh;
+    text-align: center;
+  }
+
+  .text-info h3 {
+    font-size: 3vw;
+    padding-bottom: 1vh;
+    text-align: center;
+  }
+
+  .text-info p {
+    font-size: 1.8vh;
+    padding-bottom: 1.5vh;
+    text-align: center;
+  }
+
+  .carousel {
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+  }
+
+  .carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /*REVIEWS PHONE*/
+  .reviews {
+    max-width: 100vw;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0;
+    background: white;
+  }
+
+  .reviews h2 {
+    font-size: 30px;
+    font-weight: 450;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  /*RECOMMENDED PHONE*/
+  .recommended-wrapper h2 {
+    font-size: 30px;
+    font-weight: 450;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    max-width: 100vw;
+  }
+  .recommended-wrapper h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #recommendationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-container {
+    margin: 0;
+  }
+
+  .activity-tile {
+    padding: 10px;
+  }
+
+  .activity-tile img {
+    width: 22vh;
+    height: 15vh;
+    object-fit: cover;
+  }
 }

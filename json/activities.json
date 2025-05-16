@@ -53,7 +53,7 @@
     },
     {
       "id": "culinary_backstreets_tour",
-      "name": "Culinary Backstreets Tour",
+      "name": "Culinary Backstreets",
       "category": "Food",
       "price_sek": 900,
       "description": "Explore Shanghai's hidden food gems with expert guides, sampling dishes at family-run eateries.",
@@ -70,7 +70,7 @@
     },
     {
       "id": "shanghai_bund_cruise",
-      "name": "Shanghai Bund Cruise",
+      "name": "Bund Cruise",
       "category": "Landmark",
       "price_sek": 600,
       "description": "Enjoy a scenic evening cruise along the Huangpu River, offering views of both historic and modern Shanghai.",
@@ -87,7 +87,7 @@
     },
     {
       "id": "shanghai_tower_observation",
-      "name": "Shanghai Tower Observation Deck",
+      "name": "Shanghai Tower",
       "category": "Landmark",
       "price_sek": 700,
       "description": "Get panoramic views from China's tallest building at the Shanghai Tower’s observation deck.",
@@ -172,7 +172,7 @@
     },
     {
       "id": "urban_planning_exhibition",
-      "name": "Urban Planning Exhibition Center",
+      "name": "Urban Planning",
       "category": "Museum",
       "price_sek": 200,
       "description": "Learn about Shanghai's development through interactive exhibits and a large-scale city model.",
@@ -240,7 +240,7 @@
     },
     {
       "id": "shanghai_natural_history",
-      "name": "Shanghai Natural History Museum",
+      "name": "Natural History Museum",
       "category": "Museum",
       "price_sek": 180,
       "description": "Explore dinosaurs, ancient fossils, and immersive nature displays at one of China's largest natural history museums.",
@@ -257,7 +257,7 @@
     },
     {
       "id": "shanghai_brewery_tour",
-      "name": "Shanghai Brewery Tour",
+      "name": "Brewery Tour",
       "category": "Food",
       "price_sek": 550,
       "description": "Taste locally brewed craft beers and learn about Shanghai’s growing beer scene with expert guides.",
@@ -274,7 +274,7 @@
     },
     {
       "id": "shanghai_dim_sum_class",
-      "name": "Shanghai Dim Sum Cooking Class",
+      "name": "Dim Sum Cooking Class",
       "category": "Food",
       "price_sek": 700,
       "description": "Learn to make authentic Chinese dumplings and dim sum in this hands-on culinary experience.",
@@ -291,7 +291,7 @@
     },
     {
       "id": "jinjiang_hotel_shanghai",
-      "name": "Jin Jiang Hotel Shanghai",
+      "name": "Jin Jiang Hotel",
       "category": "Hotel",
       "price_sek": 1200,
       "description": "A historic luxury hotel located in the former French Concession, blending classic architecture with modern comfort.",
@@ -308,7 +308,7 @@
     },
     {
       "id": "pearl_tower_dinner",
-      "name": "Dinner at Oriental Pearl Tower",
+      "name": "Oriental Pearl Tower",
       "category": "Food",
       "price_sek": 950,
       "description": "Enjoy dinner with a panoramic view at the revolving restaurant inside Shanghai’s iconic Oriental Pearl Tower.",
@@ -342,7 +342,7 @@
     },
     {
       "id": "shanghai_pudong_marriott",
-      "name": "Shanghai Pudong Marriott Hotel",
+      "name": "Shanghai Pudong Marriott",
       "category": "Hotel",
       "price_sek": 1500,
       "description": "Modern skyscraper hotel offering top-tier business amenities, skyline views, and convenient access to Lujiazui.",
@@ -410,7 +410,7 @@
     },
     {
       "id": "shanghai_coffee_crawl",
-      "name": "Shanghai Coffee Crawl",
+      "name": "Coffee Crawl",
       "category": "Food",
       "price_sek": 480,
       "description": "Sample the city’s finest artisanal coffee across trendy neighborhoods with a knowledgeable caffeine connoisseur.",
@@ -461,7 +461,7 @@
     },
     {
       "id": "shanghai_fashion_week",
-      "name": "Shanghai Fashion Week (Seasonal)",
+      "name": "Shanghai Fashion Week",
       "category": "Event",
       "price_sek": 0,
       "description": "Witness emerging designers and top fashion shows at venues across the city during this semi-annual event.",
