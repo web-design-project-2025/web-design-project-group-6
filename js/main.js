@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Failed to load suggestions:", error);
     });
 
-  // Handle input
+  // Input handling is this
   searchInput.addEventListener("input", function () {
     const query = searchInput.value.toLowerCase();
     suggestionsBox.innerHTML = "";
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     suggestionsBox.style.display = "block";
   });
 
-  // Hide suggestions on outside click
+  // This one added to hide suggestions when user clicks outside!!! important
   document.addEventListener("click", function (e) {
     if (!e.target.closest(".search-container")) {
       suggestionsBox.style.display = "none";
@@ -111,7 +111,7 @@ searchInput.addEventListener("keydown", function (e) {
   }
 });
 
-// food gallery carousel logic
+// Food gallery carousel logic - inspired by: https://www.youtube.com/watch?v=9HcxHDS2w1s and https://www.youtube.com/watch?v=749ta0nvj8s
 document.addEventListener("DOMContentLoaded", function () {
   // Get all the necessary elements
   var track = document.querySelector(".gallery-track");
@@ -121,14 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set the starting index of visible items
   var currentIndex = 0;
 
-  // Get the width of one gallery item, including the gap (approx 16px)
+  // Get the width of one gallery item, also with gap
   var galleryItem = track.querySelector(".gallery-item");
   var itemWidth = galleryItem.offsetWidth + 16;
 
-  // Number of items visible at once
+  // Number of items visible at once (we want 4 on full screen size)
   var visibleItems = 4;
 
-  // Total number of items in the gallery
+  // Tota number of pictures
   var totalItems = track.children.length;
 
   // Function to update the gallery position
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     track.style.transform = "translateX(-" + moveX + "px)";
   }
 
-  // When next button is clicked
+  // Next button clicked function
   nextButton.addEventListener("click", function () {
     if (currentIndex < totalItems - visibleItems) {
       currentIndex = currentIndex + 1;
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // When previous button is clicked
+  // Previous button is clicked
   prevButton.addEventListener("click", function () {
     if (currentIndex > 0) {
       currentIndex = currentIndex - 1;
