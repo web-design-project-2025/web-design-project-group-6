@@ -84,7 +84,7 @@ showLessBtn.addEventListener("click", function () {
   renderTiles();
 });
 
-/*loading from json is this one + using the filtering for keywords - it matches them to activity name!!*/
+/*loading from json is this one + using the filtering for keywords*/
 fetch("json/activities.json")
   .then(function (response) {
     return response.json();

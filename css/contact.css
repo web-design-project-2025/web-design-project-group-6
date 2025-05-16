@@ -460,13 +460,13 @@ body {
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 20%;
+  top: 50%;
   color: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
 }
 
 .contact-text h1 {
-  font-size: 45px;
+  font-size: 5vw;
   margin-bottom: 5px;
   font-weight: 450;
 }
@@ -595,5 +595,11 @@ body {
     text-align: center;
     margin: 0 0 10px;
     flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    max-height: 40vh;
   }
 }

@@ -700,7 +700,7 @@ body {
   width: 50vw;
 }
 .promo-text h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -763,7 +763,7 @@ body {
   font-weight: 500;
 }
 
-/* Section 6: Last Minute */
+/* Section 7: Last Minute */
 .last-minute {
   background-image: url("../images/WechatIMG779.jpg");
   width: 100%;
@@ -783,7 +783,7 @@ body {
 
 .btn-transparent {
   background-color: transparent;
-  color: white; 
+  color: white;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   border: 2px solid #fff;
@@ -1087,12 +1087,11 @@ body {
     padding: 0;
   }
 
-
   .promo-text {
     text-align: center;
     padding: 0;
   }
-  
+
   .promo-text h3 {
     font-size: 2.5vw;
     margin-bottom: 1rem;
@@ -1236,7 +1235,7 @@ body {
 
   /*LAST MINUTE TABLET*/
   .last-minute {
-    max-height: 40vh;
+    max-height: 60vh;
   }
 }
 
@@ -1505,6 +1504,6 @@ body {
 
   /*LAST MINUTE PHONE*/
   .last-minute {
-    max-height: 30vh;
+    max-height: 40vh;
   }
 }

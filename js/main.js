@@ -16,7 +16,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
   window.location.href = url;
 });
 
-/*Language menu */
+/*Language menu - just a word switch, maybe add json data for languages later */
 document.addEventListener("DOMContentLoaded", function () {
   var languageSelector = document.querySelector(".language-selector");
   var selectedLangSpan = document.querySelector(".selected-lang");
@@ -47,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//autofill feature for search bar
+//Autofill feature for our search bar
 
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("searchInput");
   const suggestionsBox = document.getElementById("suggestions");
   let suggestions = [];
 
-  // Fetch JSON data
+  // Fetch JSON data from the autofill folder
   fetch("../json/autofill.json")
     .then((response) => response.json())
     .then((data) => {
