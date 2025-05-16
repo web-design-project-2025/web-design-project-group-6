@@ -1,3 +1,4 @@
+// Fill in activity details on detail page based on json logic - just simple code
 var params = new URLSearchParams(window.location.search);
 var activityId = params.get("id");
 
@@ -39,7 +40,8 @@ fetch("json/activities.json")
     document.body.innerHTML = "<h2>Error loading activity.</h2>";
   });
 
-/* Recommendations function */
+/* Recommendations function down there */
+
 // Helper function to shuffle an array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -74,9 +76,10 @@ function createRecommendationTile(activity) {
 
 function renderRecommendations(activities) {
   var container = document.getElementById("recommendationsGrid");
-  container.innerHTML = ""; // Clear previous content
+  container.innerHTML = "";
 
-  shuffleArray(activities); // Shuffle activities
+  // Shuffle activities so they are always random
+  shuffleArray(activities);
 
   const randomFour = activities.slice(0, 4);
   randomFour.forEach(function (activity) {
@@ -85,7 +88,7 @@ function renderRecommendations(activities) {
   });
 }
 
-// Fetch and display recommendations
+// Fetch and display recommendations including error handling
 fetch("json/activities.json")
   .then(function (response) {
     return response.json();
