@@ -751,82 +751,6 @@ body {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.5);
 }
-/*RESULTS PAGE*/
-.results-container {
-  max-width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 5vh;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-.activity-tile {
-  border: 1px solid #ccc;
-  padding: 15px;
-  text-align: center;
-  background: #fff;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.activity-tile img {
-  width: 30vh;
-  height: 20vh;
-  object-fit: cover;
-}
-
-.book-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#showMoreBtn {
-  width: 118px;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-#showMoreBtn:hover {
-  background-color: #12567e;
-}
-
-#showLessBtn {
-  width: 118px;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #17689c;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-#showLessBtn:hover {
-  background-color: #12567e;
-}
 
 /*EVENTS*/
 .event-hero {
@@ -961,6 +885,83 @@ body {
   display: block;
 }
 
+/*RESULTS PAGE*/
+.results-container {
+  max-width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.activity-tile {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.activity-tile img {
+  width: 30vh;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#showMoreBtn {
+  width: 118px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showMoreBtn:hover {
+  background-color: #12567e;
+}
+
+#showLessBtn {
+  width: 118px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #17689c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+#showLessBtn:hover {
+  background-color: #12567e;
+}
+
 @media (max-width: 768px) {
   /*HEADER TABLET*/
   .nav-container {
@@ -1022,67 +1023,6 @@ body {
     height: 12rem;
     font-size: 1.2rem;
   }
-
-  /*FOOD TABLET*/
-
-  /* .food-gallery {
-  padding: 0;
-  margin-top: 70px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.gallery-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.gallery-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 1rem;
-}
-
-.gallery-item {
-  flex: 0 0 22%; /* Show 4 items at a time 
-  text-align: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-.gallery-item p {
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-.gallery-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-*/
 
   /*PROMO TABLET*/
 
@@ -1246,7 +1186,7 @@ body {
     gap: 1rem;
   }
 
-  /*LAST MINUTE PHONE*/
+  /*LAST MINUTE TABLET*/
   .last-minute {
     max-height: 40vh;
   }
@@ -1389,6 +1329,27 @@ body {
   }
   .location {
     padding-left: 0;
+  }
+
+  /*RESULTS PAGE PHONE*/
+  .results-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    max-width: 100vw;
+  }
+
+  .activity-tile {
+    padding: 10px;
+  }
+
+  .activity-tile img {
+    width: 70vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 
   /*FOOTER PHONE*/
