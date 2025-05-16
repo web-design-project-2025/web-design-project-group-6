@@ -654,7 +654,7 @@ body {
   width: 50vw;
 }
 .promo-text h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -1189,7 +1189,7 @@ body {
 
   /*LAST MINUTE TABLET*/
   .last-minute {
-    max-height: 40vh;
+    max-height: 60vh;
   }
 }
 
@@ -1458,6 +1458,6 @@ body {
 
   /*LAST MINUTE PHONE*/
   .last-minute {
-    max-height: 30vh;
+    max-height: 40vh;
   }
 }
