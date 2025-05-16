@@ -85,7 +85,7 @@ header {
 }
 
 .right {
-  flex: 1;
+  flex: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
@@ -94,15 +94,6 @@ header {
 
 .en {
   margin-left: -8px;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex: 1;
-  justify-content: flex-end;
-  padding-right: 10px;
 }
 
 .right a {
