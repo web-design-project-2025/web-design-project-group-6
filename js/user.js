@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.className = "login-modal";
     modal.id = "login-modal";
 
+    // Dynamically generate modal content based on user login status
+    // Logged in: Display user information and a logout button
+    // Not logged in: Display the login/registration form 
     modal.innerHTML = `
             <div class="login-container">
                 <button class="close-btn" id="close-login">&times;</button>
@@ -34,14 +37,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 ${
                   loggedInUser
-                    ? createUserProfileContent()
-                    : createLoginRegisterContent()
+                    ? createUserProfileContent() // Display user information interface
+                    : createLoginRegisterContent() // Display the user login or registration interface
                 }
             </div>
         `;
 
     // Add modal styles
     const modalStyles = document.createElement("style");
+    // Define the modal box style, including animation and responsive design
     modalStyles.innerHTML = `
             /* Login Modal Styles */
             .login-modal {
@@ -339,12 +343,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create user profile content for logged in users
   function createUserProfileContent() {
     const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    // Generate the first letter displayed on the user's avatar
     const initials = user.name
       .split(" ")
       .map((part) => part[0])
       .join("")
       .toUpperCase();
 
+    // Returns the html structure of the login and registration forms
     return `
             <div class="user-profile">
                 <div class="user-avatar">${initials}</div>
@@ -474,6 +480,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return passwordRegex.test(password);
   }
 
+  // Display form validation error messages
   function showError(input, message) {
     const formGroup = input.parentElement;
     const errorDiv =
@@ -492,6 +499,7 @@ document.addEventListener("DOMContentLoaded", function () {
     input.style.borderColor = "#e74c3c";
   }
 
+   // Clear form validation error messages
   function clearError(input) {
     const formGroup = input.parentElement;
     const errorDiv = formGroup.querySelector(".error-message");
@@ -555,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        // Get stored users
+        // Get all registered user data from localStorage
         const users = JSON.parse(localStorage.getItem("users")) || [];
 
         // Find matching user
@@ -585,7 +593,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Add real-time validation for email/mobile input
+      // Add real-time validation for email/phone number input boxes
+      // Check the format of the input in real time as the user enters it
       const emailInput = document.getElementById("email");
       emailInput.addEventListener("input", function () {
         const value = this.value;
@@ -601,7 +610,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    // Handle signup form submission
+    // Handle registration form submission
+    // Includes:
+    // 1. Complete form validation
+    // 2. User duplicate verification
+    // 3. New user registration
+    // 4. Automatic login
     const signupForm = document.getElementById("signup-form");
     if (signupForm) {
       signupForm.addEventListener("submit", function (e) {
@@ -616,6 +630,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Validate all fields
         let isValid = true;
 
+        // Verify that the name cannot be empty
         if (!name) {
           showError(
             document.getElementById("signup-name"),
@@ -624,6 +639,7 @@ document.addEventListener("DOMContentLoaded", function () {
           isValid = false;
         }
 
+        // Verify email/phone number format
         if (!validateEmail(email) && !validateMobile(email)) {
           showError(
             document.getElementById("signup-email"),
@@ -632,6 +648,7 @@ document.addEventListener("DOMContentLoaded", function () {
           isValid = false;
         }
 
+        // Verify password strength
         if (!validatePassword(password)) {
           showError(
             document.getElementById("signup-password"),
@@ -640,6 +657,7 @@ document.addEventListener("DOMContentLoaded", function () {
           isValid = false;
         }
 
+        // Verify that the passwords entered twice are the same
         if (password !== confirmPassword) {
           showError(
             document.getElementById("confirm-password"),
@@ -662,7 +680,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        // Add new user
+        // Create a new user and add it to the user list
         const newUser = {
           name,
           email,
@@ -690,7 +708,8 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Registration successful! You are now logged in.");
       });
 
-      // Add real-time validation for signup form inputs
+      // Add real-time validation to each input field in the registration form
+      // Email/phone number verification
       const signupEmailInput = document.getElementById("signup-email");
       signupEmailInput.addEventListener("input", function () {
         const value = this.value;
@@ -705,6 +724,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
+      // Password strength verification
       const signupPasswordInput = document.getElementById("signup-password");
       signupPasswordInput.addEventListener("input", function () {
         const value = this.value;
@@ -722,6 +742,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
+      // Confirm password verification
       const confirmPasswordInput = document.getElementById("confirm-password");
       confirmPasswordInput.addEventListener("input", function () {
         const value = this.value;
