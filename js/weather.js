@@ -4,7 +4,9 @@ const longitude = 121.4737;
 /* Construct the API request URL to call Open-Meteo API for real-time weather data */
 const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&temperature_unit=celsius&lang=en`;
 
-/* This 'weathercodemap' is an integer representing current weather conditions,following WMO weather phenomena standards */
+/* This 'weatherCodeMap' maps integer weather codes to human-readable descriptions.
+  It follows the World Meteorological Organization (WMO) Code Table 4677, as used by the Open-Meteo API.
+  Reference: Open-Meteo Weather Codes Documentation: https://open-meteo.com/en/docs#api-form */
 const weatherCodeMap = {
   0: "Clear",
   1: "Mostly Clear",
