@@ -42,7 +42,7 @@ fetch("json/activities.json")
 
 /* Recommendations function down there */
 
-// Helper function to shuffle an array
+// Function for shuffling the recommendations randomly - Fisher-Yates algorithm based mostly on this tutorial https://www.youtube.com/watch?v=FGAUekwri1Q with some inspiration from https://www.youtube.com/watch?v=tLxBwSL3lPQ 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -50,7 +50,7 @@ function shuffleArray(array) {
   }
 }
 
-// Create tile using same logic for consistency
+// Created tile using same logic for consistency
 function createRecommendationTile(activity) {
   var tile = document.createElement("div");
   tile.className = "activity-tile";
@@ -78,7 +78,7 @@ function renderRecommendations(activities) {
   var container = document.getElementById("recommendationsGrid");
   container.innerHTML = "";
 
-  // Shuffle activities so they are always random
+  // Shuffle activities so they are always randomly displayed by 4
   shuffleArray(activities);
 
   const randomFour = activities.slice(0, 4);
@@ -88,7 +88,7 @@ function renderRecommendations(activities) {
   });
 }
 
-// Fetch and display recommendations including error handling
+// Fetch and display recommendations including error handling for UX purposes
 fetch("json/activities.json")
   .then(function (response) {
     return response.json();
